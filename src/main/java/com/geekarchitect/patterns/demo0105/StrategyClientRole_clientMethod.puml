@@ -1,0 +1,53 @@
+@startuml
+
+header 极客架构师
+footer 专注架构师成长
+title 策略模式-序列图
+autonumber
+
+actor 用户
+participant StrategyClientRole [
+                               =策略客户方角色
+                               ----
+                               ""StrategyClientRole""
+                               ]
+
+box "策略代理方角色" #LightBlue
+participant IStrategyDelegateRole [
+                               =接口
+                               ----
+                               ""IStrategyDelegateRole""
+                               ]
+participant StrategyDelegateRole [
+                               =实现类
+                               ----
+                               ""StrategyDelegateRole""
+                               ]
+end box
+
+participant IStrategyServerRole [
+                               =策略服务方角色
+                               ----
+                               ""IStrategyServerRole""
+                               ]
+
+用户 -> StrategyClientRole : clientMethod
+activate StrategyClientRole
+StrategyClientRole -> StrategyClientRole : chooseStrategyServer
+activate StrategyClientRole
+StrategyClientRole --> StrategyClientRole
+deactivate StrategyClientRole
+StrategyClientRole -> IStrategyDelegateRole : doServer
+activate IStrategyDelegateRole
+IStrategyDelegateRole -> StrategyDelegateRole : doServer
+activate StrategyDelegateRole
+StrategyDelegateRole -> IStrategyServerRole : server
+activate IStrategyServerRole
+IStrategyServerRole --> StrategyDelegateRole
+deactivate IStrategyServerRole
+StrategyDelegateRole --> IStrategyDelegateRole
+deactivate StrategyDelegateRole
+IStrategyDelegateRole --> StrategyClientRole
+deactivate IStrategyDelegateRole
+return
+@enduml

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.demo9901.PromotionStrategyEnum</OriginalElement>
+  <nodes>
+    <node x="161.0" y="354.0">com.geekarchitect.patterns.demo9901.SKU</node>
+    <node x="586.0" y="354.0">com.geekarchitect.patterns.demo9901.Member</node>
+    <node x="1429.0" y="547.0">com.geekarchitect.patterns.demo9901.Utils</node>
+    <node x="-84.0" y="56.0">com.geekarchitect.patterns.demo9901.SetlementService</node>
+    <node x="1613.0" y="266.5">com.geekarchitect.patterns.demo9901.NonePromotionStrategy</node>
+    <node x="376.0" y="100.0">com.geekarchitect.patterns.demo9901.PromotionService</node>
+    <node x="1164.0" y="354.0">com.geekarchitect.patterns.demo9901.CartItem</node>
+    <node x="-30.5" y="-49.0">com.geekarchitect.patterns.demo9901.ISettlementService</node>
+    <node x="838.0" y="354.0">com.geekarchitect.patterns.demo9901.Cart</node>
+    <node x="968.5" y="-49.0">com.geekarchitect.patterns.demo9901.IPromotionStrategy</node>
+    <node x="645.0" y="254.0">com.geekarchitect.patterns.demo9901.CachBackPromotionStrategy</node>
+    <node x="887.0" y="105.0">com.geekarchitect.patterns.demo9901.AbstractPromotionStrategy</node>
+    <node x="1129.0" y="254.0">com.geekarchitect.patterns.demo9901.BuyMorePromotionStrategy</node>
+    <node x="1429.0" y="354.0">com.geekarchitect.patterns.demo9901.PromotionStrategyEnum</node>
+    <node x="-98.0" y="354.0">com.geekarchitect.patterns.demo9901.TestSettlementService</node>
+    <node x="161.0" y="254.0">com.geekarchitect.patterns.demo9901.ForPlusPromotionStrategy</node>
+    <node x="376.0" y="-49.0">com.geekarchitect.patterns.demo9901.IPromotionService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.demo9901.NonePromotionStrategy" target="com.geekarchitect.patterns.demo9901.AbstractPromotionStrategy" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="1733.0" y="229.0" />
+      <point x="1119.0" y="229.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo9901.SetlementService" target="com.geekarchitect.patterns.demo9901.ISettlementService" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo9901.AbstractPromotionStrategy" target="com.geekarchitect.patterns.demo9901.IPromotionStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo9901.ForPlusPromotionStrategy" target="com.geekarchitect.patterns.demo9901.AbstractPromotionStrategy" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="393.0" y="229.0" />
+      <point x="1119.0" y="229.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo9901.BuyMorePromotionStrategy" target="com.geekarchitect.patterns.demo9901.AbstractPromotionStrategy" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="1361.0" y="229.0" />
+      <point x="1119.0" y="229.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo9901.PromotionService" target="com.geekarchitect.patterns.demo9901.IPromotionService" relationship="REALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo9901.CachBackPromotionStrategy" target="com.geekarchitect.patterns.demo9901.AbstractPromotionStrategy" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="877.0" y="229.0" />
+      <point x="1119.0" y="229.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="840.5" y="439.0" />
+  <SelectedNodes>
+    <node>com.geekarchitect.patterns.demo9901.TestSettlementService</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

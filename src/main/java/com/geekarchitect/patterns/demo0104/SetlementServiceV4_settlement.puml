@@ -1,0 +1,50 @@
+@startuml
+
+header 极客架构师
+footer 专注架构师成长
+title 序列图
+autonumber
+
+actor 用户
+participant SetlementServiceV4 [
+                               =策略客户方角色
+                               ----
+                               ""SetlementServiceV4""
+                               ]
+box "策略代理方角色" #LightBlue
+participant IPromotionService [
+                               =接口
+                               ----
+                               ""IPromotionService""
+                               ]
+participant PromotionService [
+                               =实现类
+                               ----
+                               ""PromotionService""
+                               ]
+end box
+participant IPromotionStrategy [
+                               =策略服务方角色
+                               ----
+                               ""IPromotionStrategy""
+                               ]
+用户 -> SetlementServiceV4 : settlement
+activate SetlementServiceV4
+SetlementServiceV4 -> SetlementServiceV4 : promotion
+activate SetlementServiceV4
+SetlementServiceV4 -> IPromotionService : doCalculate
+activate IPromotionService
+IPromotionService -> PromotionService : doCalculate
+activate PromotionService
+PromotionService -> IPromotionStrategy : calculate
+activate IPromotionStrategy
+IPromotionStrategy --> PromotionService
+deactivate IPromotionStrategy
+PromotionService --> IPromotionService
+deactivate PromotionService
+IPromotionService --> SetlementServiceV4
+deactivate IPromotionService
+SetlementServiceV4 --> SetlementServiceV4
+deactivate SetlementServiceV4
+return
+@enduml

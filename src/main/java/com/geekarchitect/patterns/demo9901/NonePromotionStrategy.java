@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.math.BigDecimal;
 
 /**
- * 促销策略：满减
+ * 促销策略：无促销策略
  *
  * @author 极客架构师@吴念
  * @createTime 2022/3/26

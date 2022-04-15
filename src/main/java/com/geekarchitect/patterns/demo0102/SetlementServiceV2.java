@@ -17,8 +17,8 @@ public class SetlementServiceV2 implements ISettlementService {
     private BigDecimal promotion(CartItem cartItem, Member member) {
         BigDecimal promotionalSubtotal = new BigDecimal(0);
         switch (cartItem.getSku().getPromotionStrategy()) {
-            case CACH_BACK:
-                promotionalSubtotal = cachBackPromotion(cartItem, member);
+            case CASH_BACK:
+                promotionalSubtotal = cashBackPromotion(cartItem, member);
                 break;
             case BUY_MORE:
                 promotionalSubtotal = buyMorePromotion(cartItem, member);
@@ -40,7 +40,7 @@ public class SetlementServiceV2 implements ISettlementService {
      * @param: [cart]
      * @return: java.math.BigDecimal
      */
-    private BigDecimal cachBackPromotion(CartItem cartItem, Member member) {
+    private BigDecimal cashBackPromotion(CartItem cartItem, Member member) {
         SKU sku = cartItem.getSku();
         BigDecimal originalSubtotal = sku.getPrice().multiply(new BigDecimal(cartItem.getQuantity()));
         //此处省略几百行代码

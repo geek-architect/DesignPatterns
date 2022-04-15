@@ -19,8 +19,8 @@ public class SetlementServiceV3 implements ISettlementService {
     private BigDecimal promotion(CartItem cartItem, Member member) {
         BigDecimal subtotal = new BigDecimal(0);
         switch (cartItem.getSku().getPromotionStrategy()) {
-            case CACH_BACK:
-                subtotal = new CachBackPromotionStrategy().calculate(cartItem, member);
+            case CASH_BACK:
+                subtotal = new CashBackPromotionStrategy().calculate(cartItem, member);
                 break;
             case BUY_MORE:
                 subtotal = new BuyMorePromotionStrategy().calculate(cartItem, member);

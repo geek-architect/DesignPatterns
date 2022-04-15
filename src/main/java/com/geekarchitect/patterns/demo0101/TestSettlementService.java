@@ -29,7 +29,7 @@ public class TestSettlementService {
         cartItem01.setSku(new SKU("华为手机", new BigDecimal(6000), PromotionStrategyEnum.BUY_MORE, "1"));
         cartItem01.setQuantity(10);
         CartItem cartItem02 = new CartItem();
-        cartItem02.setSku(new SKU("小米手机", new BigDecimal(5000), PromotionStrategyEnum.CACH_BACK, "2"));
+        cartItem02.setSku(new SKU("小米手机", new BigDecimal(5000), PromotionStrategyEnum.CASH_BACK, "2"));
         cartItem02.setQuantity(20);
         CartItem cartItem03 = new CartItem();
         cartItem03.setSku(new SKU("三星手机", new BigDecimal(7000), PromotionStrategyEnum.NONE, "3"));

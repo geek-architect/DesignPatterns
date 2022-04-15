@@ -20,8 +20,8 @@ public class SetlementService implements ISettlementService {
         IPromotionService promotionService = new PromotionService();
         IPromotionStrategy promotionStrategy = null;
         switch (cartItem.getSku().getPromotionStrategy()) {
-            case CACH_BACK:
-                promotionStrategy = new CachBackPromotionStrategy();
+            case CASH_BACK:
+                promotionStrategy = new CashBackPromotionStrategy();
                 break;
             case BUY_MORE:
                 promotionStrategy = new BuyMorePromotionStrategy();

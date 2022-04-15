@@ -28,7 +28,7 @@ public class SetlementServiceV1 implements ISettlementService {
         BigDecimal originalSubtotal = sku.getPrice().multiply(new BigDecimal(cartItem.getQuantity()));
         BigDecimal promotionalSubtotal = new BigDecimal(0);
         switch (sku.getPromotionStrategy()) {
-            case CACH_BACK:
+            case CASH_BACK:
                 //此处省略几百行代码
                 promotionalSubtotal = Utils.random(originalSubtotal);
                 LOG.info("促销方式：满减，SKU名称：{} 原小计：{},促销后小计：{}", sku.getName(), originalSubtotal, promotionalSubtotal);

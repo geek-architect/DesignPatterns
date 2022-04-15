@@ -11,8 +11,8 @@ import java.math.BigDecimal;
  * @author 极客架构师@吴念
  * @createTime 2022/3/26
  */
-public class CachBackPromotionStrategy  extends AbstractPromotionStrategy  {
-    private static final Logger LOG = LoggerFactory.getLogger(CachBackPromotionStrategy.class);
+public class CashBackPromotionStrategy extends AbstractPromotionStrategy  {
+    private static final Logger LOG = LoggerFactory.getLogger(CashBackPromotionStrategy.class);
 
     @Override
     public BigDecimal doPromotionalSubtotal(CartItem cartItem, Member member,BigDecimal originalSubtotal) {

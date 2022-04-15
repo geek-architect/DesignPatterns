@@ -9,7 +9,7 @@ package com.geekarchitect.patterns.demo0101;
  * @return:
  */
 public enum PromotionStrategyEnum {
-    NONE("无", 0), CACH_BACK("满减", 1), BUY_MORE("多买优惠", 2), FOR_PLUS("plus会员优惠", 3);
+    NONE("无", 0), CASH_BACK("满减", 1), BUY_MORE("多买优惠", 2), FOR_PLUS("plus会员优惠", 3);
     private String name;
     private int code;
 

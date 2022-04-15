@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.demo0104.IPromotionService</OriginalElement>
+  <nodes>
+    <node x="-381.0" y="-210.0">com.geekarchitect.patterns.demo0104.SetlementServiceV4</node>
+    <node x="31.0" y="-210.0">com.geekarchitect.patterns.demo0104.IPromotionService</node>
+    <node x="31.0" y="-61.0">com.geekarchitect.patterns.demo0104.PromotionService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.demo0104.PromotionService" target="com.geekarchitect.patterns.demo0104.IPromotionService" relationship="REALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="49.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="105.5" y="92.5" />
+  <SelectedNodes>
+    <node>com.geekarchitect.patterns.demo0104.SetlementServiceV4</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

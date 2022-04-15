@@ -30,7 +30,7 @@ participant IPromotionStrategy [
                                ""IPromotionStrategy""
                                ]
 participant AbstractPromotionStrategy [
-                               =抽象类
+                               =抽象类(模板角色)
                                ----
                                ""AbstractPromotionStrategy""
                                ]

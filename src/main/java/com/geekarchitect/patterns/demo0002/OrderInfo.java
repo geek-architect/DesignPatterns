@@ -13,25 +13,25 @@ public class OrderInfo {
     /**
      * 会员id
      */
-    public String memberID;
+    private String memberID;
     /**
      * 会员选购的手机号码
      */
-    public String mobileNumber;
+    private String mobileNumber;
     /**
      * 会员姓名
      */
-    public String memberName;
+    private String memberName;
     /**
      * 会员身份证号码
      */
-    public String memberIdentityCard;
+    private String memberIdentityCard;
     /**
      * 运营商名称
      */
-    public String operatorName;
+    private String operatorName;
     /**
      * 运营商编号
      */
-    public String operatorID;
+    private String operatorID;
 }

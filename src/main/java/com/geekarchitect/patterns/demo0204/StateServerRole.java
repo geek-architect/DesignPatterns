@@ -16,7 +16,7 @@ public class StateServerRole implements IStateServerRole {
 
     private static final Logger LOG = LoggerFactory.getLogger(StateServerRole.class);
 
-    private final Map<Integer, ISpecificStateServerRole> specificStateServerRoleMap = new HashMap<>();
+    private Map<Integer, ISpecificStateServerRole> specificStateServerRoleMap = new HashMap<>();
 
 
     public StateServerRole() {

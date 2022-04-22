@@ -16,7 +16,7 @@ import java.util.Map;
  */
 public class OrderServiceV2 implements IOrderService {
     private static final Logger LOG = LoggerFactory.getLogger(OrderServiceV2.class);
-    private final Map<Integer, IOrderStateService> orderStateServiceMap = new HashMap<>();
+    private Map<Integer, IOrderStateService> orderStateServiceMap = new HashMap<>();
 
     public OrderServiceV2() {
         //初始化状态服务对象

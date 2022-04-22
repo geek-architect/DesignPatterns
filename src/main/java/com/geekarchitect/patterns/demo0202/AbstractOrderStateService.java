@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
  * @author 极客架构师@吴念
  * @createTime 2022/4/18
  */
-public class AbstractOrderStateService implements IOrderStateService {
+public abstract class AbstractOrderStateService implements IOrderStateService {
     private static final Logger LOG = LoggerFactory.getLogger(AbstractOrderStateService.class);
     protected IOrderService orderService;
     public AbstractOrderStateService(IOrderService orderService) {

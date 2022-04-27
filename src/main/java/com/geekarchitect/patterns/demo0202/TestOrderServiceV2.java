@@ -19,8 +19,8 @@ public class TestOrderServiceV2 {
     public static void main(String[] args) {
         LOG.info("第二版代码：基于状态模式");
         TestOrderServiceV2 testOrderService = new TestOrderServiceV2();
-        //testOrderService.testPay();
-        testOrderService.testReminder();
+        testOrderService.testPay();
+        //testOrderService.testReminder();
         //testOrderService.testDelete();
     }
 

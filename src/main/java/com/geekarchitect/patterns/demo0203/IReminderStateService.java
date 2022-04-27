@@ -3,7 +3,8 @@ package com.geekarchitect.patterns.demo0203;
 import com.geekarchitect.patterns.demo0201.OrderInfo;
 
 /**
- * 特定状态服务方
+ * 催单方法的特定状态服务方-接口
+ *
  * @author 极客架构师@吴念
  * @createTime 2022/4/18
  */

@@ -13,8 +13,8 @@ public class TestOrderServiceV1 {
     public static void main(String[] args) {
         LOG.info("第一版代码：普通方式");
         TestOrderServiceV1 testOrderService = new TestOrderServiceV1();
-        //testOrderService.testPay();
-        testOrderService.testReminder();
+        testOrderService.testPay();
+        //testOrderService.testReminder();
     }
 
     public void testPay() {

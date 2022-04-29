@@ -1,0 +1,50 @@
+@startuml
+
+header 极客架构师
+footer 专注架构师成长
+title 状态模式-序列图
+autonumber
+
+participant 用户
+
+participant StateClientRole [
+                               =状态客户方角色
+                               ----
+                               ""StateClientRole""
+                               ]
+box "状态服务方角色" #LightBlue
+participant IStateServerRole [
+                               =接口
+                               ----
+                               ""IStateServerRole""
+                               ]
+participant StateServerRole [
+                               =实现类
+                               ----
+                               ""StateServerRole""
+                               ]
+end box
+participant ISpecificStateServerRole [
+                               =特定状态服务方角色
+                               ----
+                               ""ISpecificStateServerRole""
+                               ]
+
+用户 -> StateClientRole : clientMethod
+activate StateClientRole
+activate StateServerRole
+deactivate StateServerRole
+StateClientRole -> IStateServerRole : stateServer1
+activate IStateServerRole
+IStateServerRole -> StateServerRole : stateServer1
+activate StateServerRole
+StateServerRole -> ISpecificStateServerRole : stateServer1
+activate ISpecificStateServerRole
+ISpecificStateServerRole --> StateServerRole
+deactivate ISpecificStateServerRole
+StateServerRole --> IStateServerRole
+deactivate StateServerRole
+IStateServerRole --> StateClientRole
+deactivate IStateServerRole
+return
+@enduml

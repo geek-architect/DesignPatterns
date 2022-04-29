@@ -1,0 +1,30 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 状态模式-序列图
+autonumber
+
+actor 状态客户方角色
+participant OrderServiceV2 [
+                               =状态服务方角色
+                               ----
+                               ""OrderServiceV2""
+                               ]
+participant IOrderStateService [
+                               =特定状态服务方角色
+                               ----
+                               ""IOrderStateService""
+                               ]
+
+状态客户方角色 -> OrderServiceV2 : pay
+activate OrderServiceV2
+OrderServiceV2 -> OrderServiceV2 : getOrderStateService
+activate OrderServiceV2
+OrderServiceV2 --> OrderServiceV2
+deactivate OrderServiceV2
+OrderServiceV2 -> IOrderStateService : pay
+activate IOrderStateService
+IOrderStateService --> OrderServiceV2
+deactivate IOrderStateService
+return
+@enduml

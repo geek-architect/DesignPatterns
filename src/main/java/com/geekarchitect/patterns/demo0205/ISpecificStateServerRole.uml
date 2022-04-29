@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.demo0205.ISpecificStateServerRole</OriginalElement>
+  <nodes>
+    <node x="173.375" y="0.0">com.geekarchitect.patterns.demo0205.StateServer4Helper</node>
+    <node x="546.8461538461538" y="127.0">com.geekarchitect.patterns.demo0205.AbstractSpecificStateServerRole</node>
+    <node x="0.0" y="234.0">com.geekarchitect.patterns.demo0205.SpecificStateServerRoleForState02</node>
+    <node x="349.0" y="234.0">com.geekarchitect.patterns.demo0205.SpecificStateServerRoleForState01</node>
+    <node x="684.375" y="11.0">com.geekarchitect.patterns.demo0205.ISpecificStateServerRole</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.demo0205.AbstractSpecificStateServerRole" target="com.geekarchitect.patterns.demo0205.StateServer4Helper" relationship="DEPENDENCY">
+      <point x="-103.0" y="-27.5" />
+      <point x="598.3461538461538" y="107.0" />
+      <point x="502.86538461538464" y="107.0" />
+      <point x="502.86538461538464" y="97.0" />
+      <point x="229.625" y="97.0" />
+      <point x="-56.25" y="38.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0205.SpecificStateServerRoleForState02" target="com.geekarchitect.patterns.demo0205.AbstractSpecificStateServerRole" relationship="GENERALIZATION">
+      <point x="82.25" y="-27.5" />
+      <point x="246.75" y="213.0" />
+      <point x="338.75" y="213.0" />
+      <point x="338.75" y="203.0" />
+      <point x="701.3461538461538" y="203.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0205.AbstractSpecificStateServerRole" target="com.geekarchitect.patterns.demo0205.StateServer4Helper" relationship="TO_ONE">
+      <point x="0.0" y="-27.5" />
+      <point x="701.3461538461538" y="107.0" />
+      <point x="342.125" y="107.0" />
+      <point x="56.25" y="38.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0205.AbstractSpecificStateServerRole" target="com.geekarchitect.patterns.demo0205.ISpecificStateServerRole" relationship="REALIZATION">
+      <point x="103.0" y="-27.5" />
+      <point x="804.3461538461538" y="107.0" />
+      <point x="807.875" y="107.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0205.SpecificStateServerRoleForState01" target="com.geekarchitect.patterns.demo0205.AbstractSpecificStateServerRole" relationship="GENERALIZATION">
+      <point x="-81.75" y="-27.5" />
+      <point x="430.75" y="213.0" />
+      <point x="338.75" y="213.0" />
+      <point x="338.75" y="203.0" />
+      <point x="701.3461538461538" y="203.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0205.SpecificStateServerRoleForState02" target="com.geekarchitect.patterns.demo0205.StateServer4Helper" relationship="DEPENDENCY">
+      <point x="-82.25" y="-27.5" />
+      <point x="82.25" y="213.0" />
+      <point x="178.3461538461538" y="213.0" />
+      <point x="178.3461538461538" y="107.0" />
+      <point x="502.86538461538464" y="107.0" />
+      <point x="502.86538461538464" y="97.0" />
+      <point x="229.625" y="97.0" />
+      <point x="-56.25" y="38.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0205.SpecificStateServerRoleForState01" target="com.geekarchitect.patterns.demo0205.StateServer4Helper" relationship="DEPENDENCY">
+      <point x="81.75" y="-27.5" />
+      <point x="594.25" y="213.0" />
+      <point x="536.3461538461538" y="213.0" />
+      <point x="536.3461538461538" y="107.0" />
+      <point x="502.86538461538464" y="107.0" />
+      <point x="502.86538461538464" y="97.0" />
+      <point x="229.625" y="97.0" />
+      <point x="-56.25" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.4499999999999997" showDependencies="true" x="465.99999999999994" y="144.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

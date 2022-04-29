@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.demo0201.IOrderService</OriginalElement>
+  <nodes>
+    <node x="0.0" y="591.0">com.geekarchitect.patterns.demo0201.TestOrderServiceV1</node>
+    <node x="363.0" y="337.0">com.geekarchitect.patterns.demo0201.OrderStateEnum</node>
+    <node x="0.0" y="0.0">com.geekarchitect.patterns.demo0201.IOrderService</node>
+    <node x="0.0" y="171.0">com.geekarchitect.patterns.demo0201.OrderServiceV1</node>
+    <node x="0.0" y="337.0">com.geekarchitect.patterns.demo0201.OrderInfo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.demo0201.OrderServiceV1" target="com.geekarchitect.patterns.demo0201.IOrderService" relationship="REALIZATION">
+      <point x="0.0" y="-60.5" />
+      <point x="0.0" y="60.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="177.0" y="130.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

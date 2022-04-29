@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.demo0203.UnpaidOrderStateService</OriginalElement>
+  <nodes>
+    <node x="-282.5" y="0.0">com.geekarchitect.patterns.demo0203.IReminderStateService</node>
+    <node x="510.0" y="117.5">com.geekarchitect.patterns.demo0203.PaidOrderStateService</node>
+    <node x="-160.0" y="105.0">com.geekarchitect.patterns.demo0203.BeforeDeliverReminderStateService</node>
+    <node x="-500.0" y="203.0">com.geekarchitect.patterns.demo0203.ReminderStateEnum</node>
+    <node x="760.0" y="94.0">com.geekarchitect.patterns.demo0203.UnpaidOrderStateService</node>
+    <node x="219.0" y="105.0">com.geekarchitect.patterns.demo0203.DeliveredOrderStateService</node>
+    <node x="-500.0" y="105.0">com.geekarchitect.patterns.demo0203.AfterDeliverReminderStateService</node>
+    <node x="483.0" y="-55.0">com.geekarchitect.patterns.demo0203.AbstractOrderStateServiceV2</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.demo0203.AfterDeliverReminderStateService" target="com.geekarchitect.patterns.demo0203.IReminderStateService" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="-340.0" y="80.0" />
+      <point x="-167.0" y="80.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0203.UnpaidOrderStateService" target="com.geekarchitect.patterns.demo0203.AbstractOrderStateServiceV2" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="886.0" y="69.0" />
+      <point x="625.0" y="69.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0203.BeforeDeliverReminderStateService" target="com.geekarchitect.patterns.demo0203.IReminderStateService" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="6.0" y="80.0" />
+      <point x="-167.0" y="80.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0203.DeliveredOrderStateService" target="com.geekarchitect.patterns.demo0203.AbstractOrderStateServiceV2" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="354.5" y="69.0" />
+      <point x="625.0" y="69.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.demo0203.PaidOrderStateService" target="com.geekarchitect.patterns.demo0203.AbstractOrderStateServiceV2" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="396.5" y="320.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

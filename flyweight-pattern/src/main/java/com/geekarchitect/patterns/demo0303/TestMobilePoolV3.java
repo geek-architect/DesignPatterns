@@ -1,8 +1,8 @@
-package com.geekarchitect.patterns.demo0302;
+package com.geekarchitect.patterns.demo0303;
 
 import com.alibaba.fastjson.JSON;
 import com.geekarchitect.patterns.demo0301.*;
-import com.geekarchitect.patterns.demo0303.MobileInfoV2;
+import com.geekarchitect.patterns.demo0302.FlyweightFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,8 +17,9 @@ import java.util.Random;
  * @author 极客架构师@吴念
  * @createTime 2022/4/29
  */
-public class TestMobilePoolV2  extends TestBase {
-    public TestMobilePoolV2() {
+public class TestMobilePoolV3 extends TestBase {
+
+    public TestMobilePoolV3() {
     }
 
     public static void main(String[] args) {
@@ -27,7 +28,7 @@ public class TestMobilePoolV2  extends TestBase {
             maxNumber = Integer.parseInt(args[0]);
         }
         //maxNumber=0;
-        TestMobilePoolV2 testMobilePool = new TestMobilePoolV2();
+        TestMobilePoolV3 testMobilePool = new TestMobilePoolV3();
         testMobilePool.loadMobile(maxNumber);
     }
 
@@ -41,10 +42,9 @@ public class TestMobilePoolV2  extends TestBase {
         mobileInfo.setAddDate(new Date());
         return mobileInfo;
     }
-
     @Override
     public String getVersion() {
-        return "第二版代码：基于享元模式+代理模式";
+        return "第三版代码：基于享元模式+多态";
     }
 
 }

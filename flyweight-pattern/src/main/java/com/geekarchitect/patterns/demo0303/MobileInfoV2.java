@@ -1,6 +1,7 @@
-package com.geekarchitect.patterns.demo0302;
+package com.geekarchitect.patterns.demo0303;
 
 import com.geekarchitect.patterns.demo0301.IMobileInfo;
+import com.geekarchitect.patterns.demo0302.FlyweightFactory;
 import lombok.Data;
 
 import java.util.Date;
@@ -16,7 +17,7 @@ public class MobileInfoV2 implements IMobileInfo {
     /**
      * 编号
      */
-    private long id;
+    private Long id;
     /**
      * 手机号码
      */
@@ -25,7 +26,7 @@ public class MobileInfoV2 implements IMobileInfo {
     /**
      * 城市编号
      */
-    private long cityCode;
+    private Long cityCode;
     /**
      * 添加日期
      */
@@ -36,18 +37,18 @@ public class MobileInfoV2 implements IMobileInfo {
     }
 
     @Override
-    public long getProvinceCode() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getProvinceCode();
+    public Long getProvinceCode() {
+        return FlyweightFactory.getInstance().getArea(cityCode).getProvinceCode();
     }
 
     @Override
-    public void setProvinceCode(long provinceCode) {
+    public void setProvinceCode(Long provinceCode) {
         throw new UnsupportedOperationException();
     }
 
     @Override
     public String getProvinceName() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getProvinceName();
+        return FlyweightFactory.getInstance().getArea(cityCode).getProvinceName();
     }
 
     @Override
@@ -56,23 +57,23 @@ public class MobileInfoV2 implements IMobileInfo {
     }
 
     @Override
-    public long getProvinceId() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getProvinceId();
+    public Long getProvinceId() {
+        return FlyweightFactory.getInstance().getArea(cityCode).getProvinceId();
     }
 
     @Override
-    public void setProvinceId(long provinceId) {
+    public void setProvinceId(Long provinceId) {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public long getCityCode() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getCityCode();
+    public Long getCityCode() {
+        return FlyweightFactory.getInstance().getArea(cityCode).getCityCode();
     }
 
     @Override
     public String getCityName() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getCityName();
+        return FlyweightFactory.getInstance().getArea(cityCode).getCityName();
     }
 
     @Override
@@ -81,12 +82,12 @@ public class MobileInfoV2 implements IMobileInfo {
     }
 
     @Override
-    public long getCityId() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getCityId();
+    public Long getCityId() {
+        return FlyweightFactory.getInstance().getArea(cityCode).getCityId();
     }
 
     @Override
-    public void setCityId(long cityId) {
+    public void setCityId(Long cityId) {
         throw new UnsupportedOperationException();
     }
 }

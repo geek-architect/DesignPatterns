@@ -7,7 +7,7 @@ import lombok.Data;
  * @createTime 2022/5/3
  */
 @Data
-public class City {
+public class Area {
     private Long cityCode;
     private String cityName;
     private Long cityId;

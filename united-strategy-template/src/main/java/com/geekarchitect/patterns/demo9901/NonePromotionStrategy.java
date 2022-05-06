@@ -1,8 +1,5 @@
 package com.geekarchitect.patterns.demo9901;
 
-import com.geekarchitect.patterns.demo0101.CartItem;
-import com.geekarchitect.patterns.demo0101.Member;
-import com.geekarchitect.patterns.demo0101.SKU;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

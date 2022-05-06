@@ -1,6 +1,6 @@
 package com.geekarchitect.patterns.demo0302;
 
-import com.geekarchitect.patterns.demo0301.City;
+import com.geekarchitect.patterns.demo0301.Area;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +16,7 @@ import java.util.Map;
 public class FlyweightFactory {
     private static final Logger LOG = LoggerFactory.getLogger(FlyweightFactory.class);
     private static final FlyweightFactory flyweightFactory = new FlyweightFactory();
-    private static final Map<Long, City> cityMap = new HashMap<>();
+    private static final Map<Long, Area> cityMap = new HashMap<>();
 
     private FlyweightFactory() {
     }
@@ -25,16 +25,16 @@ public class FlyweightFactory {
         return flyweightFactory;
     }
 
-    public City getCity(City city) {
-        if (cityMap.containsKey(city.getCityCode())) {
-            return cityMap.get(city.getCityCode());
+    public Area getArea(Area area) {
+        if (cityMap.containsKey(area.getCityCode())) {
+            return cityMap.get(area.getCityCode());
         }
-        LOG.info("城市{}首次访问，加入缓存", city);
-        cityMap.put(city.getCityCode(), city);
-        return city;
+        LOG.info("城市{}首次访问，加入缓存", area);
+        cityMap.put(area.getCityCode(), area);
+        return area;
     }
 
-    public City getCity(long cityCode) {
+    public Area getArea(Long cityCode) {
         return cityMap.get(cityCode);
     }
 

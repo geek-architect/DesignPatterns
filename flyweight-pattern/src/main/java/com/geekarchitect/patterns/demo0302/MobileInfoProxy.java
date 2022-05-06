@@ -9,39 +9,39 @@ import com.geekarchitect.patterns.demo0301.MobileInfo;
  * @createTime 2022/5/3
  */
 public class MobileInfoProxy extends MobileInfo {
-    private final long cityCode;
+    private final long areaCode;
 
-    public MobileInfoProxy(long cityCode) {
-        this.cityCode = cityCode;
+    public MobileInfoProxy(long areaCode) {
+        this.areaCode = areaCode;
     }
 
     @Override
-    public long getProvinceCode() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getProvinceCode();
+    public Long getProvinceCode() {
+        return FlyweightFactory.getInstance().getArea(areaCode).getProvinceCode();
     }
 
     @Override
     public String getProvinceName() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getProvinceName();
+        return FlyweightFactory.getInstance().getArea(areaCode).getProvinceName();
     }
 
     @Override
-    public long getProvinceId() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getProvinceId();
+    public Long getProvinceId() {
+        return FlyweightFactory.getInstance().getArea(areaCode).getProvinceId();
     }
 
     @Override
-    public long getCityCode() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getCityCode();
+    public Long getCityCode() {
+        return FlyweightFactory.getInstance().getArea(areaCode).getCityCode();
     }
 
     @Override
     public String getCityName() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getCityName();
+        return FlyweightFactory.getInstance().getArea(areaCode).getCityName();
     }
 
     @Override
-    public long getCityId() {
-        return FlyweightFactory.getInstance().getCity(cityCode).getCityId();
+    public Long getCityId() {
+        return FlyweightFactory.getInstance().getArea(areaCode).getCityId();
     }
 }

@@ -4,7 +4,7 @@ package com.geekarchitect.patterns.demo0301;
  * @author 极客架构师@吴念
  * @createTime 2022/5/2
  */
-public class CityJson {
+public class AreaJson {
     public static final String CITY_JSON = "\n" +
             "\n" +
             "[\n" +

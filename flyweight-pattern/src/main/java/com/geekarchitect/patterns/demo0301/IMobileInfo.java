@@ -8,37 +8,37 @@ import java.util.Date;
  * @createTime 2022/5/3
  */
 public interface IMobileInfo {
-    long getId();
+    Long getId();
 
-    void setId(long id);
+    void setId(Long id);
 
     String getMobile();
 
     void setMobile(String mobile);
 
-    long getProvinceCode();
+    Long getProvinceCode();
 
-    void setProvinceCode(long provinceCode);
+    void setProvinceCode(Long provinceCode);
 
     String getProvinceName();
 
     void setProvinceName(String provinceName);
 
-    long getProvinceId();
+    Long getProvinceId();
 
-    void setProvinceId(long provinceId);
+    void setProvinceId(Long provinceId);
 
-    long getCityCode();
+    Long getCityCode();
 
-    void setCityCode(long cityCode);
+    void setCityCode(Long cityCode);
 
     String getCityName();
 
     void setCityName(String cityName);
 
-    long getCityId();
+    Long getCityId();
 
-    void setCityId(long cityId);
+    void setCityId(Long cityId);
 
     Date getAddDate();
 

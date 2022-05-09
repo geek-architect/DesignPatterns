@@ -1,14 +1,10 @@
 package com.geekarchitect.patterns.demo0302;
 
-import com.alibaba.fastjson.JSON;
-import com.geekarchitect.patterns.demo0301.*;
-import com.geekarchitect.patterns.demo0303.MobileInfoV2;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.geekarchitect.patterns.demo0301.Area;
+import com.geekarchitect.patterns.demo0301.IMobileInfo;
+import com.geekarchitect.patterns.demo0301.TestBase;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -17,7 +13,7 @@ import java.util.Random;
  * @author 极客架构师@吴念
  * @createTime 2022/4/29
  */
-public class TestMobilePoolV2  extends TestBase {
+public class TestMobilePoolV2 extends TestBase {
     public TestMobilePoolV2() {
     }
 
@@ -35,7 +31,7 @@ public class TestMobilePoolV2  extends TestBase {
         //初始化省份及城市信息
         Area area = arrayList.get(new Random().nextInt(arrayList.size()));
         area = FlyweightFactory.getInstance().getArea(area);
-        IMobileInfo mobileInfo = new MobileInfoV2(area.getCityCode());
+        IMobileInfo mobileInfo = new MobileInfoProxy(area.getCityCode());
         mobileInfo.setId(id);
         mobileInfo.setMobile(mobile);
         mobileInfo.setAddDate(new Date());

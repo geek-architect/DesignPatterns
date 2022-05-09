@@ -1,7 +1,7 @@
-package com.geekarchitect.patterns.demo0303;
+package com.geekarchitect.patterns.demo0304;
 
 import com.geekarchitect.patterns.demo0301.IMobileInfo;
-import com.geekarchitect.patterns.demo0302.FlyweightFactory;
+import com.geekarchitect.patterns.demo0304.FlyweightFactoryV2;
 import lombok.Data;
 
 import java.util.Date;
@@ -13,7 +13,7 @@ import java.util.Date;
  * @createTime 2022/4/29
  */
 @Data
-public class MobileInfoV2 implements IMobileInfo {
+public class MobileInfoV3 implements IMobileInfo {
     /**
      * 编号
      */
@@ -32,13 +32,13 @@ public class MobileInfoV2 implements IMobileInfo {
      */
     private Date addDate;
 
-    public MobileInfoV2(long cityCode) {
+    public MobileInfoV3(long cityCode) {
         this.cityCode = cityCode;
     }
 
     @Override
     public Long getProvinceCode() {
-        return FlyweightFactory.getInstance().getArea(cityCode).getProvinceCode();
+        return FlyweightFactoryV2.getInstance().getArea(cityCode).getProvinceCode();
     }
 
     @Override
@@ -48,7 +48,7 @@ public class MobileInfoV2 implements IMobileInfo {
 
     @Override
     public String getProvinceName() {
-        return FlyweightFactory.getInstance().getArea(cityCode).getProvinceName();
+        return FlyweightFactoryV2.getInstance().getArea(cityCode).getProvinceName();
     }
 
     @Override
@@ -58,7 +58,7 @@ public class MobileInfoV2 implements IMobileInfo {
 
     @Override
     public Long getProvinceId() {
-        return FlyweightFactory.getInstance().getArea(cityCode).getProvinceId();
+        return FlyweightFactoryV2.getInstance().getArea(cityCode).getProvinceId();
     }
 
     @Override
@@ -68,7 +68,7 @@ public class MobileInfoV2 implements IMobileInfo {
 
     @Override
     public String getCityName() {
-        return FlyweightFactory.getInstance().getArea(cityCode).getCityName();
+        return FlyweightFactoryV2.getInstance().getArea(cityCode).getCityName();
     }
 
     @Override
@@ -78,7 +78,7 @@ public class MobileInfoV2 implements IMobileInfo {
 
     @Override
     public Long getCityId() {
-        return FlyweightFactory.getInstance().getArea(cityCode).getCityId();
+        return FlyweightFactoryV2.getInstance().getArea(cityCode).getCityId();
     }
 
     @Override

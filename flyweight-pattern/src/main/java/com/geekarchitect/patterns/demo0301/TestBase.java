@@ -8,12 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 测试基类
  * @author 极客架构师@吴念
  * @createTime 2022/5/6
  */
 public abstract class TestBase {
     private static final Logger LOG = LoggerFactory.getLogger(TestBase.class);
     protected List<Area> arrayList = new ArrayList<>();
+
+    public TestBase() {
+        init();
+    }
+
     /**
      * 初始化省份和城市
      */
@@ -21,13 +27,9 @@ public abstract class TestBase {
         arrayList = JSON.parseArray(AreaJson.CITY_JSON, Area.class);
     }
 
-    public TestBase() {
-        init();
-    }
-
     /**
-     *
-      * @param id
+     * 生成手机号
+     * @param id
      * @param mobile
      * @return
      */
@@ -35,12 +37,13 @@ public abstract class TestBase {
 
     /**
      * 返回版本信息
+     *
      * @return
      */
     public abstract String getVersion();
 
     /**
-     * 载入手机号
+     * 载入手机号：这里使用了模板方法模式
      *
      * @param
      */

@@ -9,9 +9,10 @@ import java.util.Random;
  * @author 极客架构师@吴念
  * @createTime 2022/4/29
  */
-public class TestMobilePool extends TestBase{
+public class TestMobilePool extends TestBase {
     public TestMobilePool() {
     }
+
     public static void main(String[] args) {
         int maxNumber = 10000;
         if (null != args && args.length > 0) {
@@ -21,10 +22,12 @@ public class TestMobilePool extends TestBase{
         TestMobilePool testMobilePool = new TestMobilePool();
         testMobilePool.loadMobile(maxNumber);
     }
+    @Override
     public IMobileInfo generateMobile(Long id, String mobile) {
         IMobileInfo mobileInfo = new MobileInfo();
         mobileInfo.setId(id);
         mobileInfo.setMobile(mobile);
+        mobileInfo.setAddDate(new Date());
         //初始化省份及城市信息
         Area area = arrayList.get(new Random().nextInt(arrayList.size()));
         mobileInfo.setProvinceId(area.getProvinceId());
@@ -34,7 +37,6 @@ public class TestMobilePool extends TestBase{
         mobileInfo.setCityId(area.getCityId());
         mobileInfo.setCityCode(area.getCityCode());
         mobileInfo.setCityName(area.getCityName());
-        mobileInfo.setAddDate(new Date());
         return mobileInfo;
     }
 

@@ -33,6 +33,6 @@ public interface IMobilePool {
      * @param: [mobile]
      * @return: boolean
      */
-    void delete(String mobile);
+    IMobileInfo get(String mobile);
 
 }

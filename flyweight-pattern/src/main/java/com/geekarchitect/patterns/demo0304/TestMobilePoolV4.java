@@ -3,7 +3,6 @@ package com.geekarchitect.patterns.demo0304;
 import com.geekarchitect.patterns.demo0301.Area;
 import com.geekarchitect.patterns.demo0301.IMobileInfo;
 import com.geekarchitect.patterns.demo0301.TestBase;
-import com.geekarchitect.patterns.demo0302.FlyweightFactory;
 import com.geekarchitect.patterns.demo0303.MobileInfoV2;
 
 import java.util.Date;
@@ -40,9 +39,10 @@ public class TestMobilePoolV4 extends TestBase {
         mobileInfo.setAddDate(new Date());
         return mobileInfo;
     }
+
     @Override
     public String getVersion() {
-        return "第三版代码：基于享元模式+guava cache";
+        return "第四版代码：基于享元模式+guava cache";
     }
 
 }

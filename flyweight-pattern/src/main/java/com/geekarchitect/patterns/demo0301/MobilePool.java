@@ -31,8 +31,8 @@ public class MobilePool implements IMobilePool {
     }
 
     @Override
-    public void delete(String mobile) {
-        mobileInfoMap.remove(mobile);
+    public IMobileInfo get(String mobile) {
+        return mobileInfoMap.get(mobile);
     }
 
 }

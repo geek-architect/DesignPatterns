@@ -32,9 +32,9 @@ public class FlyweightFactoryV2 {
     }
 
     public Area getArea(Area city) {
-        Area cachedCity= null;
+        Area cachedCity = null;
         try {
-            cachedCity = AREA_CACHE.get(Long.valueOf(city.getCityCode()),new Callable<Area>(){
+            cachedCity = AREA_CACHE.get(Long.valueOf(city.getCityCode()), new Callable<Area>() {
 
                 @Override
                 public Area call() throws Exception {
@@ -43,7 +43,7 @@ public class FlyweightFactoryV2 {
                 }
             });
         } catch (ExecutionException e) {
-            LOG.error(e.getMessage(),e);
+            LOG.error(e.getMessage(), e);
         }
         return cachedCity;
     }

@@ -1,6 +1,7 @@
 package com.geekarchitect.patterns.demo0302;
 
 import com.geekarchitect.patterns.demo0301.Area;
+import com.geekarchitect.patterns.demo0301.AreaJson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,13 +30,16 @@ public class FlyweightFactory {
         if (AREA_MAP.containsKey(area.getCityCode())) {
             return AREA_MAP.get(area.getCityCode());
         }
+        area= AreaJson.getAreaByCityCode(area.getCityCode());
         LOG.info("城市{}首次访问，加入缓存", area);
         AREA_MAP.put(area.getCityCode(), area);
         return area;
     }
 
     public Area getArea(Long cityCode) {
-        return AREA_MAP.get(cityCode);
+        Area area=new Area();
+        area.setCityCode(cityCode);
+        return getArea(area);
     }
 
 }

@@ -1,14 +1,9 @@
 package com.geekarchitect.patterns.demo0303;
 
-import com.alibaba.fastjson.JSON;
 import com.geekarchitect.patterns.demo0301.*;
 import com.geekarchitect.patterns.demo0302.FlyweightFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -31,12 +26,10 @@ public class TestMobilePoolV3 extends TestBase {
         TestMobilePoolV3 testMobilePool = new TestMobilePoolV3();
         testMobilePool.loadMobile(maxNumber);
     }
-
+    @Override
     public IMobileInfo generateMobile(Long id, String mobile) {
         //初始化省份及城市信息
-        Area area = arrayList.get(new Random().nextInt(arrayList.size()));
-        area = FlyweightFactory.getInstance().getArea(area);
-        IMobileInfo mobileInfo = new MobileInfoV2(area.getCityCode());
+        IMobileInfo mobileInfo = new MobileInfoV2(AreaJson.randomArea().getCityCode());
         mobileInfo.setId(id);
         mobileInfo.setMobile(mobile);
         mobileInfo.setAddDate(new Date());

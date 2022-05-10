@@ -16,7 +16,7 @@ public class MobileInfoProxy extends MobileInfo {
     }
 
     @Override
-    public Long getProvinceCode() {
+    public long getProvinceCode() {
         return FlyweightFactory.getInstance().getArea(areaCode).getProvinceCode();
     }
 
@@ -26,12 +26,12 @@ public class MobileInfoProxy extends MobileInfo {
     }
 
     @Override
-    public Long getProvinceId() {
+    public long getProvinceId() {
         return FlyweightFactory.getInstance().getArea(areaCode).getProvinceId();
     }
 
     @Override
-    public Long getCityCode() {
+    public long getCityCode() {
         return FlyweightFactory.getInstance().getArea(areaCode).getCityCode();
     }
 
@@ -41,7 +41,7 @@ public class MobileInfoProxy extends MobileInfo {
     }
 
     @Override
-    public Long getCityId() {
+    public long getCityId() {
         return FlyweightFactory.getInstance().getArea(areaCode).getCityId();
     }
 }

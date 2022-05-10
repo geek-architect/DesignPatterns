@@ -8,10 +8,10 @@ import lombok.Data;
  */
 @Data
 public class Area {
-    private Long cityCode;
+    private long cityCode;
     private String cityName;
-    private Long cityId;
-    private Long provinceCode;
+    private long cityId;
+    private long provinceCode;
     private String provinceName;
-    private Long provinceId;
+    private long provinceId;
 }

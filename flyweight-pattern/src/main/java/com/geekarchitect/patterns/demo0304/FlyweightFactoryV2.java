@@ -1,6 +1,7 @@
 package com.geekarchitect.patterns.demo0304;
 
 import com.geekarchitect.patterns.demo0301.Area;
+import com.geekarchitect.patterns.demo0301.AreaJson;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import org.slf4j.Logger;
@@ -31,25 +32,28 @@ public class FlyweightFactoryV2 {
         return flyweightFactory;
     }
 
-    public Area getArea(Area city) {
-        Area cachedCity = null;
+    public Area getArea(Area area) {
+        Area cachedArea = null;
         try {
-            cachedCity = AREA_CACHE.get(Long.valueOf(city.getCityCode()), new Callable<Area>() {
+            cachedArea = AREA_CACHE.get(Long.valueOf(area.getCityCode()), new Callable<Area>() {
 
                 @Override
                 public Area call() throws Exception {
-                    LOG.info("城市{}首次访问，加入缓存", city);
-                    return city;
+                    Area cachedCity= AreaJson.getAreaByCityCode(area.getCityCode());
+                    LOG.info("城市{}首次访问，加入缓存", cachedCity);
+                    return cachedCity;
                 }
             });
         } catch (ExecutionException e) {
             LOG.error(e.getMessage(), e);
         }
-        return cachedCity;
+        return cachedArea;
     }
 
     public Area getArea(long cityCode) {
-        return AREA_CACHE.getIfPresent(Long.valueOf(cityCode));
+        Area area=new Area();
+        area.setCityCode(cityCode);
+        return getArea(area);
     }
 
 }

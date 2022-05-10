@@ -1,6 +1,7 @@
 package com.geekarchitect.patterns.demo0304;
 
 import com.geekarchitect.patterns.demo0301.Area;
+import com.geekarchitect.patterns.demo0301.AreaJson;
 import com.geekarchitect.patterns.demo0301.IMobileInfo;
 import com.geekarchitect.patterns.demo0301.TestBase;
 import com.geekarchitect.patterns.demo0303.MobileInfoV2;
@@ -28,12 +29,10 @@ public class TestMobilePoolV4 extends TestBase {
         TestMobilePoolV4 testMobilePool = new TestMobilePoolV4();
         testMobilePool.loadMobile(maxNumber);
     }
-
+    @Override
     public IMobileInfo generateMobile(Long id, String mobile) {
         //初始化省份及城市信息
-        Area area = arrayList.get(new Random().nextInt(arrayList.size()));
-        area = FlyweightFactoryV2.getInstance().getArea(area);
-        IMobileInfo mobileInfo = new MobileInfoV2(area.getCityCode());
+        IMobileInfo mobileInfo = new MobileInfoV2(AreaJson.randomArea().getCityCode());
         mobileInfo.setId(id);
         mobileInfo.setMobile(mobile);
         mobileInfo.setAddDate(new Date());

@@ -29,7 +29,7 @@ public class TestMobilePool extends TestBase {
         mobileInfo.setMobile(mobile);
         mobileInfo.setAddDate(new Date());
         //初始化省份及城市信息
-        Area area = arrayList.get(new Random().nextInt(arrayList.size()));
+        Area area = AreaJson.randomArea();
         mobileInfo.setProvinceId(area.getProvinceId());
         mobileInfo.setProvinceName(area.getProvinceName());
         mobileInfo.setProvinceCode(area.getProvinceCode());

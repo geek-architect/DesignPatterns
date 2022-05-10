@@ -14,19 +14,9 @@ import java.util.List;
  */
 public abstract class TestBase {
     private static final Logger LOG = LoggerFactory.getLogger(TestBase.class);
-    protected List<Area> arrayList = new ArrayList<>();
 
     public TestBase() {
-        init();
     }
-
-    /**
-     * 初始化省份和城市
-     */
-    private void init() {
-        arrayList = JSON.parseArray(AreaJson.CITY_JSON, Area.class);
-    }
-
     /**
      * 生成手机号
      * @param id
@@ -63,7 +53,7 @@ public abstract class TestBase {
                 LOG.info("手机信息{}", mobileInfo.toString());
                 LOG.info("已载入{}个手机号", mobileId);
             }
-            if (maxNumber > 0 && mobileId == maxNumber) {
+            if (maxNumber > 0 && mobileId >= maxNumber) {
                 break;
             }
             startMobile++;

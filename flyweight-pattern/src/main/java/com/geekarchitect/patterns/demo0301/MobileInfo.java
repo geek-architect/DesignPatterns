@@ -15,7 +15,7 @@ public class MobileInfo implements IMobileInfo {
     /**
      * 编号
      */
-    private Long id;
+    private long id;
     /**
      * 手机号码
      */
@@ -23,7 +23,7 @@ public class MobileInfo implements IMobileInfo {
     /**
      * 省份编码
      */
-    private Long provinceCode;
+    private long provinceCode;
     /**
      * 省份名称
      */
@@ -31,12 +31,12 @@ public class MobileInfo implements IMobileInfo {
     /**
      * 省份序号
      */
-    private Long provinceId;
+    private long provinceId;
 
     /**
      * 城市编号
      */
-    private Long cityCode;
+    private long cityCode;
 
     /**
      * 城市名称
@@ -46,7 +46,7 @@ public class MobileInfo implements IMobileInfo {
     /**
      * 城市序号（不全局唯一）
      */
-    private Long cityId;
+    private long cityId;
 
     /**
      * 添加日期

@@ -17,7 +17,7 @@ public class MobileInfoV2 implements IMobileInfo {
     /**
      * 编号
      */
-    private Long id;
+    private long id;
     /**
      * 手机号码
      */
@@ -26,7 +26,7 @@ public class MobileInfoV2 implements IMobileInfo {
     /**
      * 城市编号
      */
-    private Long cityCode;
+    private long cityCode;
     /**
      * 添加日期
      */
@@ -37,12 +37,12 @@ public class MobileInfoV2 implements IMobileInfo {
     }
 
     @Override
-    public Long getProvinceCode() {
+    public long getProvinceCode() {
         return FlyweightFactory.getInstance().getArea(cityCode).getProvinceCode();
     }
 
     @Override
-    public void setProvinceCode(Long provinceCode) {
+    public void setProvinceCode(long provinceCode) {
         throw new UnsupportedOperationException();
     }
 
@@ -57,12 +57,12 @@ public class MobileInfoV2 implements IMobileInfo {
     }
 
     @Override
-    public Long getProvinceId() {
+    public long getProvinceId() {
         return FlyweightFactory.getInstance().getArea(cityCode).getProvinceId();
     }
 
     @Override
-    public void setProvinceId(Long provinceId) {
+    public void setProvinceId(long provinceId) {
         throw new UnsupportedOperationException();
     }
 
@@ -77,12 +77,12 @@ public class MobileInfoV2 implements IMobileInfo {
     }
 
     @Override
-    public Long getCityId() {
+    public long getCityId() {
         return FlyweightFactory.getInstance().getArea(cityCode).getCityId();
     }
 
     @Override
-    public void setCityId(Long cityId) {
+    public void setCityId(long cityId) {
         throw new UnsupportedOperationException();
     }
 }

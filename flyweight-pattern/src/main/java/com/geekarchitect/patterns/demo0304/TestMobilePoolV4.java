@@ -1,13 +1,10 @@
 package com.geekarchitect.patterns.demo0304;
 
-import com.geekarchitect.patterns.demo0301.Area;
 import com.geekarchitect.patterns.demo0301.AreaJson;
 import com.geekarchitect.patterns.demo0301.IMobileInfo;
 import com.geekarchitect.patterns.demo0301.TestBase;
-import com.geekarchitect.patterns.demo0303.MobileInfoV2;
 
 import java.util.Date;
-import java.util.Random;
 
 /**
  * 第四版代码：基于享元模式+guava cache 测试类
@@ -29,10 +26,11 @@ public class TestMobilePoolV4 extends TestBase {
         TestMobilePoolV4 testMobilePool = new TestMobilePoolV4();
         testMobilePool.loadMobile(maxNumber);
     }
+
     @Override
     public IMobileInfo generateMobile(Long id, String mobile) {
         //初始化省份及城市信息
-        IMobileInfo mobileInfo = new MobileInfoV2(AreaJson.randomArea().getCityCode());
+        IMobileInfo mobileInfo = new MobileInfoV3(AreaJson.randomArea().getCityCode());
         mobileInfo.setId(id);
         mobileInfo.setMobile(mobile);
         mobileInfo.setAddDate(new Date());

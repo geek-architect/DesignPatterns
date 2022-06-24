@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.simplefactory.demo04</OriginalElement>
+  <nodes>
+    <node x="249.0" y="105.0">com.geekarchitect.patterns.simplefactory.demo03.Excel2003Export</node>
+    <node x="224.0" y="0.0">com.geekarchitect.patterns.simplefactory.demo03.IExcelExport</node>
+    <node x="0.0" y="105.0">com.geekarchitect.patterns.simplefactory.demo03.Excel2007Export</node>
+    <node x="198.265625" y="212.0">com.geekarchitect.patterns.simplefactory.demo04.SimpleFactory</node>
+    <node x="306.265625" y="319.0">com.geekarchitect.patterns.simplefactory.demo04.FileExportServiceV2</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo03.Excel2003Export" target="com.geekarchitect.patterns.simplefactory.demo03.IExcelExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="363.5" y="85.0" />
+      <point x="253.0625" y="85.0" />
+      <point x="253.0625" y="75.0" />
+      <point x="281.25" y="75.0" />
+      <point x="-57.25" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo04.SimpleFactory" target="com.geekarchitect.patterns.simplefactory.demo03.IExcelExport" relationship="DEPENDENCY">
+      <point x="101.0" y="-27.5" />
+      <point x="450.765625" y="186.0" />
+      <point x="507.0" y="186.0" />
+      <point x="507.0" y="85.0" />
+      <point x="514.5625" y="85.0" />
+      <point x="514.5625" y="75.0" />
+      <point x="395.75" y="75.0" />
+      <point x="57.25" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo04.SimpleFactory" target="com.geekarchitect.patterns.simplefactory.demo03.Excel2007Export" relationship="CREATE">
+      <point x="-101.0" y="-27.5" />
+      <point x="248.765625" y="186.0" />
+      <point x="114.5" y="186.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo03.Excel2007Export" target="com.geekarchitect.patterns.simplefactory.demo03.IExcelExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="114.5" y="85.0" />
+      <point x="253.0625" y="85.0" />
+      <point x="253.0625" y="75.0" />
+      <point x="281.25" y="75.0" />
+      <point x="-57.25" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo04.SimpleFactory" target="com.geekarchitect.patterns.simplefactory.demo03.Excel2003Export" relationship="CREATE">
+      <point x="0.0" y="-27.5" />
+      <point x="349.765625" y="186.0" />
+      <point x="363.5" y="186.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo04.FileExportServiceV2" target="com.geekarchitect.patterns.simplefactory.demo03.IExcelExport" relationship="DEPENDENCY">
+      <point x="68.5" y="-27.5" />
+      <point x="511.765625" y="293.0" />
+      <point x="533.0625" y="293.0" />
+      <point x="533.0625" y="85.0" />
+      <point x="514.5625" y="85.0" />
+      <point x="514.5625" y="75.0" />
+      <point x="395.75" y="75.0" />
+      <point x="57.25" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo04.FileExportServiceV2" target="com.geekarchitect.patterns.simplefactory.demo04.SimpleFactory" relationship="DEPENDENCY">
+      <point x="-68.5" y="-27.5" />
+      <point x="374.765625" y="293.0" />
+      <point x="349.765625" y="293.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="105.0" y="-149.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

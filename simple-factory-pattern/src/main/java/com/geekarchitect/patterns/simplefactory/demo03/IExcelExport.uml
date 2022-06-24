@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.simplefactory.demo03.IExcelExport</OriginalElement>
+  <nodes>
+    <node x="344.49999999999994" y="254.0">com.geekarchitect.patterns.simplefactory.demo03.FileType</node>
+    <node x="361.0" y="105.0">com.geekarchitect.patterns.simplefactory.demo03.TestFileExport</node>
+    <node x="601.0" y="105.0">com.geekarchitect.patterns.simplefactory.demo03.Excel2003Export</node>
+    <node x="725.5" y="0.0">com.geekarchitect.patterns.simplefactory.demo03.IExcelExport</node>
+    <node x="0.0" y="0.0">com.geekarchitect.patterns.simplefactory.demo03.SKU</node>
+    <node x="850.0" y="105.0">com.geekarchitect.patterns.simplefactory.demo03.Excel2007Export</node>
+    <node x="333.0" y="0.0">com.geekarchitect.patterns.simplefactory.demo03.AbstractTest</node>
+    <node x="611.3021491782554" y="254.0">com.geekarchitect.patterns.simplefactory.demo03.FileExportService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo03.Excel2003Export" target="com.geekarchitect.patterns.simplefactory.demo03.IExcelExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="715.5" y="80.0" />
+      <point x="840.0" y="80.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo03.Excel2007Export" target="com.geekarchitect.patterns.simplefactory.demo03.IExcelExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="964.5" y="80.0" />
+      <point x="840.0" y="80.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.simplefactory.demo03.TestFileExport" target="com.geekarchitect.patterns.simplefactory.demo03.AbstractTest" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9473053892215569" showDependencies="false" x="539.5" y="407.5" />
+  <SelectedNodes>
+    <node>com.geekarchitect.patterns.simplefactory.demo03.FileExportService</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

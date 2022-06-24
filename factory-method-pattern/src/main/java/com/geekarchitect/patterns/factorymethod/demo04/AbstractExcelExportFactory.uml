@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.factorymethod.demo04.AbstractExcelExportFactory</OriginalElement>
+  <nodes>
+    <node x="294.0" y="364.0">com.geekarchitect.patterns.factorymethod.demo04.Excel2007ExportFactory</node>
+    <node x="147.0" y="0.0">com.geekarchitect.patterns.factorymethod.demo04.IExcelExportFactory</node>
+    <node x="-189.8260869565217" y="21.999999999999943">com.geekarchitect.patterns.factorymethod.demo04.IFileTitleRow</node>
+    <node x="0.0" y="375.0">com.geekarchitect.patterns.factorymethod.demo04.Excel2003ExportFactory</node>
+    <node x="148.5" y="215.0">com.geekarchitect.patterns.factorymethod.demo04.AbstractExcelExportFactory</node>
+    <node x="-289.0652173913043" y="375.0">com.geekarchitect.patterns.factorymethod.demo04.TestFileExport</node>
+    <node x="-285.0652173913043" y="187.99999999999994">com.geekarchitect.patterns.factorymethod.demo04.ITotalRow</node>
+    <node x="-499.9347826086956" y="21.999999999999943">com.geekarchitect.patterns.factorymethod.demo04.IExcelFile</node>
+    <node x="-499.9347826086956" y="187.99999999999994">com.geekarchitect.patterns.factorymethod.demo04.IDataRow</node>
+    <node x="-104.82608695652169" y="187.99999999999994">com.geekarchitect.patterns.factorymethod.demo04.ITableTitleRow</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.factorymethod.demo04.Excel2003ExportFactory" target="com.geekarchitect.patterns.factorymethod.demo04.AbstractExcelExportFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="137.0" y="339.0" />
+      <point x="284.0" y="339.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.factorymethod.demo04.Excel2007ExportFactory" target="com.geekarchitect.patterns.factorymethod.demo04.AbstractExcelExportFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-60.5" />
+      <point x="431.0" y="339.0" />
+      <point x="284.0" y="339.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.factorymethod.demo04.AbstractExcelExportFactory" target="com.geekarchitect.patterns.factorymethod.demo04.IExcelExportFactory" relationship="REALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="82.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.7540983606557377" showDependencies="false" x="391.5" y="386.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

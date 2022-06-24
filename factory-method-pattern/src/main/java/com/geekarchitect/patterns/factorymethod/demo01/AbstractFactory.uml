@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.factorymethod.demo01.AbstractFactory</OriginalElement>
+  <nodes>
+    <node x="-315.0" y="125.0">com.geekarchitect.patterns.factorymethod.demo01.ConcreteFactoryB</node>
+    <node x="272.75" y="15.0">com.geekarchitect.patterns.factorymethod.demo01.IProduct</node>
+    <node x="-91.0" y="125.0">com.geekarchitect.patterns.factorymethod.demo01.ConcreteFactoryA</node>
+    <node x="-219.0" y="230.0">com.geekarchitect.patterns.factorymethod.demo01.ClientRole</node>
+    <node x="142.0" y="120.0">com.geekarchitect.patterns.factorymethod.demo01.ConcreteProductA</node>
+    <node x="359.0" y="120.0">com.geekarchitect.patterns.factorymethod.demo01.ConcreteProductB</node>
+    <node x="-190.0" y="45.0">com.geekarchitect.patterns.factorymethod.demo01.AbstractFactory</node>
+    <node x="-203.0" y="-60.0">com.geekarchitect.patterns.factorymethod.demo01.IFactory</node>
+    <node x="-29.0" y="230.0">com.geekarchitect.patterns.factorymethod.demo01.TestFactoryMethod</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.factorymethod.demo01.ConcreteProductA" target="com.geekarchitect.patterns.factorymethod.demo01.IProduct" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="240.5" y="95.0" />
+      <point x="348.75" y="95.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.factorymethod.demo01.AbstractFactory" target="com.geekarchitect.patterns.factorymethod.demo01.IFactory" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.factorymethod.demo01.ConcreteProductB" target="com.geekarchitect.patterns.factorymethod.demo01.IProduct" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="457.0" y="95.0" />
+      <point x="348.75" y="95.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.factorymethod.demo01.ConcreteFactoryB" target="com.geekarchitect.patterns.factorymethod.demo01.AbstractFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="-213.0" y="100.0" />
+      <point x="-101.0" y="100.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.factorymethod.demo01.ConcreteFactoryA" target="com.geekarchitect.patterns.factorymethod.demo01.AbstractFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="11.0" y="100.0" />
+      <point x="-101.0" y="100.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="313.0" y="219.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

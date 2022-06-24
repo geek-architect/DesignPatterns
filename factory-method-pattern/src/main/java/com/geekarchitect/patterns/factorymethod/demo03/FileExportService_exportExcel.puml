@@ -1,0 +1,34 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 工厂方法模式（普通形态）-序列图
+autonumber
+participant 用户
+participant FileExportService [
+                               =工厂客户方
+                               ----
+                               ""FileExportService""
+                               ]
+participant IExcelExportFactory [
+                               =抽象工厂
+                               ----
+                               ""IExcelExportFactory""
+                               ]
+participant IExcelExport [
+                               =抽象产品
+                               ----
+                               ""IExcelExport""
+                               ]
+
+用户 -> FileExportService : exportExcel
+activate FileExportService
+FileExportService -> IExcelExportFactory : createExcelExport
+activate IExcelExportFactory
+IExcelExportFactory --> FileExportService
+deactivate IExcelExportFactory
+FileExportService -> IExcelExport : exportExcel
+activate IExcelExport
+IExcelExport --> FileExportService
+deactivate IExcelExport
+return
+@enduml

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.abstractfactory.demo01.FamilyAFactory</OriginalElement>
+  <nodes>
+    <node x="547.0" y="43.0">com.geekarchitect.patterns.abstractfactory.demo01.ProductTypeAOfFamilyA</node>
+    <node x="547.0" y="248.0">com.geekarchitect.patterns.abstractfactory.demo01.ProductTypeAOfFamilyB</node>
+    <node x="-44.0" y="143.0">com.geekarchitect.patterns.abstractfactory.demo01.FamilyAFactory</node>
+    <node x="-343.0" y="143.0">com.geekarchitect.patterns.abstractfactory.demo01.FamilyBFactory</node>
+    <node x="-193.5" y="-64.0">com.geekarchitect.patterns.abstractfactory.demo01.IFactory</node>
+    <node x="286.0" y="248.0">com.geekarchitect.patterns.abstractfactory.demo01.ProductTypeBOfFamilyB</node>
+    <node x="286.0" y="43.0">com.geekarchitect.patterns.abstractfactory.demo01.ProductTypeBOfFamilyA</node>
+    <node x="-187.0" y="270.0">com.geekarchitect.patterns.abstractfactory.demo01.ClientRole</node>
+    <node x="-143.0" y="63.0">com.geekarchitect.patterns.abstractfactory.demo01.AbstractFactory</node>
+    <node x="454.0" y="143.0">com.geekarchitect.patterns.abstractfactory.demo01.IProductTypeB</node>
+    <node x="454.0" y="-62.0">com.geekarchitect.patterns.abstractfactory.demo01.IProductTypeA</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo01.ProductTypeBOfFamilyB" target="com.geekarchitect.patterns.abstractfactory.demo01.IProductTypeB" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="406.5" y="223.0" />
+      <point x="537.0" y="223.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo01.ProductTypeAOfFamilyA" target="com.geekarchitect.patterns.abstractfactory.demo01.IProductTypeA" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="667.5" y="18.0" />
+      <point x="537.0" y="18.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo01.ProductTypeAOfFamilyB" target="com.geekarchitect.patterns.abstractfactory.demo01.IProductTypeB" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="667.5" y="223.0" />
+      <point x="537.0" y="223.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo01.AbstractFactory" target="com.geekarchitect.patterns.abstractfactory.demo01.IFactory" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo01.FamilyAFactory" target="com.geekarchitect.patterns.abstractfactory.demo01.AbstractFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="95.5" y="118.0" />
+      <point x="-54.0" y="118.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo01.ProductTypeBOfFamilyA" target="com.geekarchitect.patterns.abstractfactory.demo01.IProductTypeA" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="406.5" y="18.0" />
+      <point x="537.0" y="18.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo01.FamilyBFactory" target="com.geekarchitect.patterns.abstractfactory.demo01.AbstractFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="-203.5" y="118.0" />
+      <point x="-54.0" y="118.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="357.0" y="370.5" />
+  <SelectedNodes>
+    <node>com.geekarchitect.patterns.abstractfactory.demo01.ClientRole</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

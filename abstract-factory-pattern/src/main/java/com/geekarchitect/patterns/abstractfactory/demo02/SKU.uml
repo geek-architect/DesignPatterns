@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.abstractfactory.demo02.SKU</OriginalElement>
+  <nodes>
+    <node x="141.1066945606695" y="249.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.RussiaFileExportFactory</node>
+    <node x="116.8566945606695" y="481.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.RussiaExcel2003Export</node>
+    <node x="155.85669456066938" y="680.2165271966528">com.geekarchitect.patterns.abstractfactory.demo02.RussiaMysqlExport</node>
+    <node x="464.1066945606695" y="249.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.ChinaFileExportFactory</node>
+    <node x="325.6066945606695" y="169.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.AbstractFileExportFactory</node>
+    <node x="390.8566945606694" y="680.2165271966528">com.geekarchitect.patterns.abstractfactory.demo02.RussiaOracleExport</node>
+    <node x="302.6066945606695" y="42.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.IFileExportFactory</node>
+    <node x="812.1066945606694" y="42.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.AbstractTest</node>
+    <node x="840.1066945606694" y="274.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.FileExportService</node>
+    <node x="840.1066945606694" y="147.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.TestFileExport</node>
+    <node x="625.8566945606694" y="680.2165271966528">com.geekarchitect.patterns.abstractfactory.demo02.ChinaOracleExport</node>
+    <node x="508.3566945606695" y="575.2165271966528">com.geekarchitect.patterns.abstractfactory.demo02.ISqlExport</node>
+    <node x="501.1066945606695" y="376.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.IExcelExport</node>
+    <node x="875.8566945606694" y="481.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.RussiaExcel2007Export</node>
+    <node x="1042.3650627615064" y="147.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.FileType</node>
+    <node x="-191.8933054393305" y="42.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.SKU</node>
+    <node x="374.8566945606695" y="481.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.ChinaExcel2003Export</node>
+    <node x="860.8566945606694" y="680.2165271966528">com.geekarchitect.patterns.abstractfactory.demo02.ChinaMysqlExport</node>
+    <node x="625.8566945606694" y="481.21652719665275">com.geekarchitect.patterns.abstractfactory.demo02.ChinaExcel2007Export</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.RussiaFileExportFactory" target="com.geekarchitect.patterns.abstractfactory.demo02.AbstractFileExportFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="292.6066945606695" y="224.21652719665275" />
+      <point x="454.1066945606695" y="224.21652719665275" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.RussiaExcel2003Export" target="com.geekarchitect.patterns.abstractfactory.demo02.IExcelExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="235.8566945606695" y="456.21652719665275" />
+      <point x="615.6066945606694" y="456.21652719665275" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.TestFileExport" target="com.geekarchitect.patterns.abstractfactory.demo02.AbstractTest" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.ChinaOracleExport" target="com.geekarchitect.patterns.abstractfactory.demo02.ISqlExport" relationship="REALIZATION">
+      <point x="1.1368683772161603E-13" y="-27.5" />
+      <point x="733.3566945606696" y="655.2165271966528" />
+      <point x="615.8566945606694" y="655.2165271966528" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.ChinaExcel2007Export" target="com.geekarchitect.patterns.abstractfactory.demo02.IExcelExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="740.8566945606694" y="456.21652719665275" />
+      <point x="615.6066945606694" y="456.21652719665275" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.ChinaFileExportFactory" target="com.geekarchitect.patterns.abstractfactory.demo02.AbstractFileExportFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="615.6066945606694" y="224.21652719665275" />
+      <point x="454.1066945606695" y="224.21652719665275" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.ChinaMysqlExport" target="com.geekarchitect.patterns.abstractfactory.demo02.ISqlExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="968.3566945606694" y="655.2165271966528" />
+      <point x="615.8566945606694" y="655.2165271966528" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.ChinaExcel2003Export" target="com.geekarchitect.patterns.abstractfactory.demo02.IExcelExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="490.3566945606695" y="456.21652719665275" />
+      <point x="615.6066945606694" y="456.21652719665275" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.RussiaMysqlExport" target="com.geekarchitect.patterns.abstractfactory.demo02.ISqlExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="263.3566945606694" y="655.2165271966528" />
+      <point x="615.8566945606694" y="655.2165271966528" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.AbstractFileExportFactory" target="com.geekarchitect.patterns.abstractfactory.demo02.IFileExportFactory" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.RussiaOracleExport" target="com.geekarchitect.patterns.abstractfactory.demo02.ISqlExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="498.3566945606694" y="655.2165271966528" />
+      <point x="615.8566945606694" y="655.2165271966528" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.abstractfactory.demo02.RussiaExcel2007Export" target="com.geekarchitect.patterns.abstractfactory.demo02.IExcelExport" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="994.3566945606694" y="456.21652719665275" />
+      <point x="615.6066945606694" y="456.21652719665275" />
+      <point x="0.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.7816843826655765" showDependencies="false" x="652.5" y="601.5" />
+  <SelectedNodes>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.RussiaFileExportFactory</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.RussiaExcel2003Export</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.RussiaMysqlExport</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.ChinaFileExportFactory</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.AbstractFileExportFactory</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.RussiaOracleExport</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.IFileExportFactory</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.AbstractTest</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.FileExportService</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.TestFileExport</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.ChinaOracleExport</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.ISqlExport</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.IExcelExport</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.RussiaExcel2007Export</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.FileType</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.SKU</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.ChinaExcel2003Export</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.ChinaMysqlExport</node>
+    <node>com.geekarchitect.patterns.abstractfactory.demo02.ChinaExcel2007Export</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

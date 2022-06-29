@@ -1,0 +1,64 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 抽象工厂模式-序列图
+autonumber
+
+actor 用户
+participant FileExportService [
+                               =客户方角色
+                               ----
+                               ""FileExportService""
+                               ]
+
+participant IFileExportFactory [
+                               =抽象工厂角色
+                               ----
+                               ""IFileExportFactory""
+                               ]
+participant ChinaFileExportFactory [
+                               =具体工厂角色
+                               ----
+                               ""ChinaFileExportFactory""
+                               ]
+box "抽象产品角色" #LightBlue
+participant IExcelExport [
+                               =抽象产品
+                               ----
+                               ""IExcelExport""
+                               ]
+participant ISqlExport [
+                               =抽象产品
+                               ----
+                               ""ISqlExport""
+                               ]
+end box
+
+用户 -> FileExportService : exportFile
+activate FileExportService
+FileExportService -> IFileExportFactory : createExcelExport
+activate IFileExportFactory
+IFileExportFactory -> ChinaFileExportFactory : createExcelExport
+activate ChinaFileExportFactory
+ChinaFileExportFactory --> IFileExportFactory
+deactivate ChinaFileExportFactory
+IFileExportFactory --> FileExportService
+deactivate IFileExportFactory
+FileExportService -> IFileExportFactory : createSqlExport
+activate IFileExportFactory
+IFileExportFactory -> ChinaFileExportFactory : createSqlExport
+activate ChinaFileExportFactory
+ChinaFileExportFactory --> IFileExportFactory
+deactivate ChinaFileExportFactory
+IFileExportFactory --> FileExportService
+deactivate IFileExportFactory
+FileExportService -> IExcelExport : exportExcel
+activate IExcelExport
+IExcelExport --> FileExportService
+deactivate IExcelExport
+FileExportService -> ISqlExport : exportSql
+activate ISqlExport
+ISqlExport --> FileExportService
+deactivate ISqlExport
+return
+@enduml

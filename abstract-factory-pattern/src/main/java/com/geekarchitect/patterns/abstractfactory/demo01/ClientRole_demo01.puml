@@ -1,0 +1,63 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 抽象工厂模式-序列图
+autonumber
+
+actor 用户
+participant ClientRole [
+                               =客户方角色
+                               ----
+                               ""ClientRole""
+                               ]
+
+participant IFactory [
+                               =抽象工厂角色
+                               ----
+                               ""IFactory""
+                               ]
+participant FamilyAFactory [
+                               =具体工厂角色
+                               ----
+                               ""FamilyAFactory""
+                               ]
+box "抽象产品角色" #LightBlue
+participant IProductTypeA [
+                               =抽象产品
+                               ----
+                               ""IProductTypeA""
+                               ]
+participant IProductTypeB [
+                               =抽象产品
+                               ----
+                               ""IProductTypeB""
+                               ]
+end box
+用户 -> ClientRole : demo01
+activate ClientRole
+ClientRole -> IFactory : createProductTypeA
+activate IFactory
+IFactory -> FamilyAFactory : createProductTypeA
+activate FamilyAFactory
+FamilyAFactory --> IFactory
+deactivate FamilyAFactory
+IFactory --> ClientRole
+deactivate IFactory
+ClientRole -> IFactory : createProductTypeB
+activate IFactory
+IFactory -> FamilyAFactory : createProductTypeB
+activate FamilyAFactory
+FamilyAFactory --> IFactory
+deactivate FamilyAFactory
+IFactory --> ClientRole
+deactivate IFactory
+ClientRole -> IProductTypeA : doService
+activate IProductTypeA
+IProductTypeA --> ClientRole
+deactivate IProductTypeA
+ClientRole -> IProductTypeB : doService
+activate IProductTypeB
+IProductTypeB --> ClientRole
+deactivate IProductTypeB
+return
+@enduml

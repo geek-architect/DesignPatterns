@@ -1,0 +1,49 @@
+@startuml
+
+header 极客架构师
+footer 专注架构师成长
+title 建造者模式-序列图
+autonumber
+
+actor 用户
+participant Client [
+                               =客户方角色
+                               ----
+                               ""Client""
+                               ]
+
+participant Director [
+                               =导演角色
+                               ----
+                               ""Director""
+                               ]
+participant IBuilder [
+                               =抽象工厂角色
+                               ----
+                               ""IBuilder""
+                               ]
+participant ConcreteProductA [
+                               =具体角色
+                               ----
+                               ""ConcreteProductA""
+                               ]
+用户 -> Client : demo01
+activate Client
+Client -> Director : constructProductA
+activate Director
+Director -> IBuilder : buildPartA
+activate IBuilder
+IBuilder --> Director
+deactivate IBuilder
+Director -> IBuilder : buildPartB
+activate IBuilder
+IBuilder --> Director
+deactivate IBuilder
+Director --> Client
+deactivate Director
+Client -> ConcreteProductA : toString
+activate ConcreteProductA
+ConcreteProductA --> Client
+deactivate ConcreteProductA
+return
+@enduml

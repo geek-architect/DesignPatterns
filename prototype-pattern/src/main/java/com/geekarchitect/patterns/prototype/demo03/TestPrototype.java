@@ -15,7 +15,7 @@ public class TestPrototype {
 
     public static void main(String[] args) {
         TestPrototype testPrototype = new TestPrototype();
-        testPrototype.demo03();
+        testPrototype.demo02();
     }
 
     public void demo01() {

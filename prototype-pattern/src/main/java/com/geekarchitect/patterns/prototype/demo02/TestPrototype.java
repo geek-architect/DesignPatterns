@@ -15,12 +15,7 @@ public class TestPrototype {
 
     public static void main(String[] args) {
         TestPrototype testPrototype = new TestPrototype();
-        testPrototype.demo01();
         testPrototype.demo02();
-        testPrototype.demo03();
-        testPrototype.demo04();
-        testPrototype.demo05();
-        testPrototype.demo06();
     }
 
     public void demo01() {

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.dubbo.config.ServiceConfig</OriginalElement>
+  <nodes>
+    <node x="1203.8660807556616" y="349.61980830670956">org.apache.dubbo.config.AbstractMethodConfig</node>
+    <node x="387.7206240116867" y="272.6198083067096">org.apache.dubbo.config.AbstractServiceConfig</node>
+    <node x="21.874689002648495" y="305.61980830670956">org.apache.dubbo.config.ServiceConfigBase</node>
+    <node x="-311.2928464115556" y="459.61980830670956">org.apache.dubbo.config.ServiceConfig</node>
+    <node x="735.566559020725" y="151.6198083067096">org.apache.dubbo.config.AbstractInterfaceConfig</node>
+    <node x="1570.3677860051841" y="393.6198083067096">org.apache.dubbo.config.AbstractConfig</node>
+    <node x="1956.8694912547066" y="494.1198083067096">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.dubbo.config.AbstractMethodConfig" target="org.apache.dubbo.config.AbstractConfig" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.apache.dubbo.config.AbstractConfig" target="java.io.Serializable" relationship="REALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.apache.dubbo.config.AbstractInterfaceConfig" target="org.apache.dubbo.config.AbstractMethodConfig" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.apache.dubbo.config.ServiceConfigBase" target="org.apache.dubbo.config.AbstractServiceConfig" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.apache.dubbo.config.AbstractServiceConfig" target="org.apache.dubbo.config.AbstractInterfaceConfig" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.apache.dubbo.config.ServiceConfig" target="org.apache.dubbo.config.ServiceConfigBase" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Balloons" zoom="0.7232600732600734" showDependencies="false" x="949.2881742213217" y="650.8964294758166" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

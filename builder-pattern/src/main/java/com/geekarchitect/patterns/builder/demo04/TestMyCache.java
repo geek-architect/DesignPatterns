@@ -18,7 +18,8 @@ public class TestMyCache {
     public void demo01() {
         MyCache<String, String> myCache = new MyCache.MyCacheBuilder(10, 100L)
                 .setConcurrencyLevel(20)
-                .setMaximumWeight(30L).build();
+                .setMaximumWeight(30L)
+                .build();
         LOG.info(myCache.toString());
     }
 }

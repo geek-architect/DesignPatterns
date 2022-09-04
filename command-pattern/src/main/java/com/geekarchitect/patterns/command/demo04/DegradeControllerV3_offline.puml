@@ -1,0 +1,26 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 降级模块-命令模式（完整版-创建命令阶段）
+autonumber
+participant 用户
+用户 -> DegradeControllerV3 : offline
+activate DegradeControllerV3
+DegradeControllerV3 -> IDegradeServiceV3 : offline
+activate IDegradeServiceV3
+IDegradeServiceV3 -> DegradeServiceImplV3 : offline
+activate DegradeServiceImplV3
+DegradeServiceImplV3 -> ICommandManager : addCommand
+activate ICommandManager
+ICommandManager -> CommandManagerImpl : addCommand
+activate CommandManagerImpl
+CommandManagerImpl --> ICommandManager
+deactivate CommandManagerImpl
+ICommandManager --> DegradeServiceImplV3
+deactivate ICommandManager
+DegradeServiceImplV3 --> IDegradeServiceV3
+deactivate DegradeServiceImplV3
+IDegradeServiceV3 --> DegradeControllerV3
+deactivate IDegradeServiceV3
+return
+@enduml

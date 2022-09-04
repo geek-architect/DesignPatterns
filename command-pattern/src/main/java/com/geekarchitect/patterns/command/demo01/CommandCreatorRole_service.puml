@@ -1,0 +1,25 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 命令模式
+autonumber
+activate InvokerRole
+InvokerRole -> ICommandRole : execute
+activate ICommandRole
+ICommandRole -> ConcreteCommandRoleA : execute
+activate ConcreteCommandRoleA
+ConcreteCommandRoleA -> IExecutorRole : doExecute01
+activate IExecutorRole
+IExecutorRole -> ConcreteExecutorRole : doExecute01
+activate ConcreteExecutorRole
+ConcreteExecutorRole --> IExecutorRole
+deactivate ConcreteExecutorRole
+IExecutorRole --> ConcreteCommandRoleA
+deactivate IExecutorRole
+ConcreteCommandRoleA --> ICommandRole
+deactivate ConcreteCommandRoleA
+ICommandRole --> InvokerRole
+deactivate ICommandRole
+deactivate InvokerRole
+return
+@enduml

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.command.demo01.AbstractExecutorRole</OriginalElement>
+  <nodes>
+    <node x="219.0" y="-11.0">com.geekarchitect.patterns.command.demo01.IExecutorRole</node>
+    <node x="-379.0" y="221.0">com.geekarchitect.patterns.command.demo01.ConcreteCommandRoleB</node>
+    <node x="-110.0" y="221.0">com.geekarchitect.patterns.command.demo01.ConcreteCommandRoleA</node>
+    <node x="-236.5" y="116.0">com.geekarchitect.patterns.command.demo01.AbstractCommandRole</node>
+    <node x="193.0" y="116.0">com.geekarchitect.patterns.command.demo01.AbstractExecutorRole</node>
+    <node x="-486.0" y="99.0">com.geekarchitect.patterns.command.demo01.InvokerRole</node>
+    <node x="191.0" y="243.0">com.geekarchitect.patterns.command.demo01.ConcreteExecutorRole</node>
+    <node x="-560.3260869565217" y="11.000000000000007">com.geekarchitect.patterns.command.demo01.CommandCreatorRole</node>
+    <node x="-205.5" y="11.0">com.geekarchitect.patterns.command.demo01.ICommandRole</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.command.demo01.AbstractExecutorRole" target="com.geekarchitect.patterns.command.demo01.IExecutorRole" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.command.demo01.ConcreteExecutorRole" target="com.geekarchitect.patterns.command.demo01.AbstractExecutorRole" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.command.demo01.AbstractCommandRole" target="com.geekarchitect.patterns.command.demo01.ICommandRole" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.command.demo01.ConcreteCommandRoleB" target="com.geekarchitect.patterns.command.demo01.AbstractCommandRole" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="-254.5" y="196.0" />
+      <point x="-120.0" y="196.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.command.demo01.ConcreteCommandRoleA" target="com.geekarchitect.patterns.command.demo01.AbstractCommandRole" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="14.5" y="196.0" />
+      <point x="-120.0" y="196.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.15" showDependencies="false" x="252.17391304347836" y="314.7826086956522" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

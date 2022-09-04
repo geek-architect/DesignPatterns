@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.command.demo03.ReviewAppImplV2</OriginalElement>
+  <nodes>
+    <node x="-411.0" y="278.0">com.geekarchitect.patterns.command.demo03.ReviewAppImplV2</node>
+    <node x="-522.5" y="-230.0">com.geekarchitect.patterns.command.demo03.IDegradeServiceV2</node>
+    <node x="-685.0" y="278.0">com.geekarchitect.patterns.command.demo03.RecommendAppImplV2</node>
+    <node x="-530.0" y="-344.0">com.geekarchitect.patterns.command.demo03.DegradeControllerV2</node>
+    <node x="-537.0" y="-125.0">com.geekarchitect.patterns.command.demo03.DegradeServiceImplV2</node>
+    <node x="-550.0" y="75.0">com.geekarchitect.patterns.command.demo03.CommandImpl</node>
+    <node x="-537.0" y="-30.0">com.geekarchitect.patterns.command.demo03.ICommand</node>
+    <node x="-548.0" y="173.0">com.geekarchitect.patterns.command.demo03.IAppClientV2</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.command.demo03.DegradeServiceImplV2" target="com.geekarchitect.patterns.command.demo03.IDegradeServiceV2" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.command.demo03.ReviewAppImplV2" target="com.geekarchitect.patterns.command.demo03.IAppClientV2" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="-284.0" y="253.0" />
+      <point x="-421.0" y="253.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.command.demo03.CommandImpl" target="com.geekarchitect.patterns.command.demo03.ICommand" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.command.demo03.RecommendAppImplV2" target="com.geekarchitect.patterns.command.demo03.IAppClientV2" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="-558.0" y="253.0" />
+      <point x="-421.0" y="253.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="224.5" y="170.0" />
+  <SelectedNodes>
+    <node>com.geekarchitect.patterns.command.demo03.DegradeControllerV2</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

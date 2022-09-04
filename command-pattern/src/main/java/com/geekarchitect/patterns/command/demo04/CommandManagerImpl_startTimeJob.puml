@@ -1,0 +1,26 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 降级模块-命令模式（执行命令阶段）
+autonumber
+participant 用户
+用户 -> CommandManagerImpl : startTimeJob
+activate CommandManagerImpl
+CommandManagerImpl -> Anonymous : run
+activate Anonymous
+Anonymous -> ICommand : execute
+activate ICommand
+ICommand -> CommandImpl : execute
+activate CommandImpl
+CommandImpl -> IAppClientV2 : offline
+activate IAppClientV2
+IAppClientV2 --> CommandImpl
+deactivate IAppClientV2
+CommandImpl --> ICommand
+deactivate CommandImpl
+ICommand --> Anonymous
+deactivate ICommand
+Anonymous --> CommandManagerImpl
+deactivate Anonymous
+return
+@enduml

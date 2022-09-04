@@ -1,0 +1,22 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 降级模块-无设计模式
+autonumber
+participant 用户
+用户 -> DegradeController : offline
+activate DegradeController
+DegradeController -> IDegradeService : offline
+activate IDegradeService
+IDegradeService -> DegradeServiceImpl : offline
+activate DegradeServiceImpl
+DegradeServiceImpl -> IAppClient : offline
+activate IAppClient
+IAppClient --> DegradeServiceImpl
+deactivate IAppClient
+DegradeServiceImpl --> IDegradeService
+deactivate DegradeServiceImpl
+IDegradeService --> DegradeController
+deactivate IDegradeService
+return
+@enduml

@@ -43,7 +43,6 @@ public class RedisServer {
      * @param snapshot
      */
     public void restoreSnapshot(ISnapshot snapshot) {
-        RedisSnapshot redisSnapshot = (RedisSnapshot) snapshot;
         this.valueMap = (Map<String, String>) ((HashMap) ((RedisSnapshot) snapshot).getValueMap()).clone();
         LOG.info("快照恢复成功");
     }

@@ -1,0 +1,18 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 用户资格校验-apache-commons-chain版
+autonumber
+participant 用户
+用户 -> ActivityControllerV3 : verification
+activate ActivityControllerV3
+ActivityControllerV3 -> IVerificationServiceV3 : isLegalMember
+activate IVerificationServiceV3
+IVerificationServiceV3 -> VerificationServiceImplV3 : isLegalMember
+activate VerificationServiceImplV3
+VerificationServiceImplV3 --> IVerificationServiceV3
+deactivate VerificationServiceImplV3
+IVerificationServiceV3 --> ActivityControllerV3
+deactivate IVerificationServiceV3
+return
+@enduml

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.cor.demo02.VerificationImpl</OriginalElement>
+  <nodes>
+    <node x="693.5" y="297.5">com.geekarchitect.patterns.cor.demo02.Member</node>
+    <node x="296.5" y="150.5">com.geekarchitect.patterns.cor.demo02.IVerification</node>
+    <node x="303.5" y="352.5">com.geekarchitect.patterns.cor.demo02.VerificationServiceImpl</node>
+    <node x="303.5" y="512.5">com.geekarchitect.patterns.cor.demo02.IVerificationService</node>
+    <node x="340.5" y="632.5">com.geekarchitect.patterns.cor.demo02.ActivityController</node>
+    <node x="33.5" y="297.5">com.geekarchitect.patterns.cor.demo02.Activity</node>
+    <node x="296.5" y="-9.5">com.geekarchitect.patterns.cor.demo02.VerificationImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.cor.demo02.IVerification" target="com.geekarchitect.patterns.cor.demo02.Activity" relationship="DEPENDENCY">
+      <point x="-163.5" y="0.0" />
+      <point x="140.0" y="200.0" />
+      <point x="0.0" y="-82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.VerificationImpl" target="com.geekarchitect.patterns.cor.demo02.Activity" relationship="DEPENDENCY">
+      <point x="-163.5" y="0.0" />
+      <point x="31.5" y="40.0" />
+      <point x="31.5" y="380.0" />
+      <point x="-106.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.VerificationImpl" target="com.geekarchitect.patterns.cor.demo02.Member" relationship="DEPENDENCY">
+      <point x="163.5" y="0.0" />
+      <point x="805.0" y="40.0" />
+      <point x="5.0" y="-82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.ActivityController" target="com.geekarchitect.patterns.cor.demo02.Activity" relationship="CREATE">
+      <point x="-119.5" y="0.0" />
+      <point x="135.0" y="660.0" />
+      <point x="-5.0" y="82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.IVerificationService" target="com.geekarchitect.patterns.cor.demo02.Member" relationship="DEPENDENCY">
+      <point x="156.5" y="0.0" />
+      <point x="800.0" y="540.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.VerificationServiceImpl" target="com.geekarchitect.patterns.cor.demo02.Member" relationship="DEPENDENCY">
+      <point x="156.5" y="0.0" />
+      <point x="-106.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.IVerificationService" target="com.geekarchitect.patterns.cor.demo02.Activity" relationship="DEPENDENCY">
+      <point x="-156.5" y="0.0" />
+      <point x="145.0" y="540.0" />
+      <point x="5.0" y="82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.VerificationServiceImpl" target="com.geekarchitect.patterns.cor.demo02.Activity" relationship="DEPENDENCY">
+      <point x="-156.5" y="0.0" />
+      <point x="106.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.VerificationServiceImpl" target="com.geekarchitect.patterns.cor.demo02.IVerificationService" relationship="REALIZATION">
+      <point x="0.0" y="27.5" />
+      <point x="0.0" y="-27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.VerificationImpl" target="com.geekarchitect.patterns.cor.demo02.IVerification" relationship="REALIZATION">
+      <point x="0.0" y="49.5" />
+      <point x="0.0" y="-49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.ActivityController" target="com.geekarchitect.patterns.cor.demo02.Member" relationship="CREATE">
+      <point x="119.5" y="0.0" />
+      <point x="908.5" y="660.0" />
+      <point x="908.5" y="380.0" />
+      <point x="106.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.ActivityController" target="com.geekarchitect.patterns.cor.demo02.IVerificationService" relationship="TO_ONE">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.VerificationServiceImpl" target="com.geekarchitect.patterns.cor.demo02.IVerification" relationship="TO_ONE">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo02.IVerification" target="com.geekarchitect.patterns.cor.demo02.Member" relationship="DEPENDENCY">
+      <point x="163.5" y="0.0" />
+      <point x="795.0" y="200.0" />
+      <point x="-5.0" y="-82.5" />
+    </edge>
+  </edges>
+  <settings layout="Compact" zoom="1.0" showDependencies="true" x="470.0" y="339.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

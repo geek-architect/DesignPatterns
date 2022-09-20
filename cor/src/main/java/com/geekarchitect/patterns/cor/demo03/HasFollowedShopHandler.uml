@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.cor.demo03.HasFollowedShopHandler</OriginalElement>
+  <nodes>
+    <node x="260.5" y="752.5">com.geekarchitect.patterns.cor.demo03.ActivityControllerV2</node>
+    <node x="371.5" y="161.5">com.geekarchitect.patterns.cor.demo03.IVerificationHandler</node>
+    <node x="1333.5" y="597.5">com.geekarchitect.patterns.cor.demo03.Response</node>
+    <node x="402.5" y="592.5">com.geekarchitect.patterns.cor.demo03.HasBoughtHandler</node>
+    <node x="702.5" y="32.5">com.geekarchitect.patterns.cor.demo03.IsPlusHandler</node>
+    <node x="971.5" y="150.5">com.geekarchitect.patterns.cor.demo03.AbstractVerificationHandler</node>
+    <node x="673.0" y="652.5">com.geekarchitect.patterns.cor.demo03.HasFollowedShopHandler</node>
+    <node x="300.5" y="847.5">com.geekarchitect.patterns.cor.demo03.IVerificationServiceV2</node>
+    <node x="413.0" y="315.5">com.geekarchitect.patterns.cor.demo03.Request</node>
+    <node x="23.5" y="381.5">com.geekarchitect.patterns.cor.demo03.VerificationServiceImplV2</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.cor.demo03.VerificationServiceImplV2" target="com.geekarchitect.patterns.cor.demo03.IVerificationServiceV2" relationship="REALIZATION">
+      <point x="-38.0" y="38.5" />
+      <point x="142.0" y="875.0" />
+      <point x="-156.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.VerificationServiceImplV2" target="com.geekarchitect.patterns.cor.demo03.HasFollowedShopHandler" relationship="DEPENDENCY">
+      <point x="0.0" y="38.5" />
+      <point x="180.0" y="680.0" />
+      <point x="-127.0" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.AbstractVerificationHandler" target="com.geekarchitect.patterns.cor.demo03.Request" relationship="DEPENDENCY">
+      <point x="-5.0" y="49.5" />
+      <point x="1115.0" y="420.0" />
+      <point x="107.0" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.VerificationServiceImplV2" target="com.geekarchitect.patterns.cor.demo03.IVerificationHandler" relationship="TO_ONE">
+      <point x="0.0" y="-38.5" />
+      <point x="180.0" y="200.0" />
+      <point x="-148.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.VerificationServiceImplV2" target="com.geekarchitect.patterns.cor.demo03.Request" relationship="CREATE">
+      <point x="156.5" y="0.0" />
+      <point x="-107.0" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.HasBoughtHandler" target="com.geekarchitect.patterns.cor.demo03.Request" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="104.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.IVerificationHandler" target="com.geekarchitect.patterns.cor.demo03.Request" relationship="DEPENDENCY">
+      <point x="0.0" y="38.5" />
+      <point x="0.0" y="-104.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.HasBoughtHandler" target="com.geekarchitect.patterns.cor.demo03.Response" relationship="CREATE">
+      <point x="0.0" y="27.5" />
+      <point x="520.0" y="764.5" />
+      <point x="1440.0" y="764.5" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.IsPlusHandler" target="com.geekarchitect.patterns.cor.demo03.Response" relationship="CREATE">
+      <point x="117.5" y="-5.0" />
+      <point x="1445.0" y="55.0" />
+      <point x="5.0" y="-82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.ActivityControllerV2" target="com.geekarchitect.patterns.cor.demo03.IVerificationServiceV2" relationship="TO_ONE">
+      <point x="77.0" y="27.5" />
+      <point x="0.0" y="-27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.HasBoughtHandler" target="com.geekarchitect.patterns.cor.demo03.AbstractVerificationHandler" relationship="GENERALIZATION">
+      <point x="117.5" y="0.0" />
+      <point x="1125.0" y="620.0" />
+      <point x="5.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.IsPlusHandler" target="com.geekarchitect.patterns.cor.demo03.AbstractVerificationHandler" relationship="GENERALIZATION">
+      <point x="117.5" y="5.0" />
+      <point x="1120.0" y="65.0" />
+      <point x="-0.0" y="-49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.IsPlusHandler" target="com.geekarchitect.patterns.cor.demo03.Request" relationship="DEPENDENCY">
+      <point x="-0.0" y="27.5" />
+      <point x="820.0" y="410.0" />
+      <point x="107.0" y="-10.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.VerificationServiceImplV2" target="com.geekarchitect.patterns.cor.demo03.IsPlusHandler" relationship="DEPENDENCY">
+      <point x="-156.5" y="0.0" />
+      <point x="21.5" y="420.0" />
+      <point x="21.5" y="60.0" />
+      <point x="-117.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.IVerificationHandler" target="com.geekarchitect.patterns.cor.demo03.Response" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.5" />
+      <point x="520.0" y="148.5" />
+      <point x="1548.5" y="148.5" />
+      <point x="1548.5" y="680.0" />
+      <point x="106.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.HasFollowedShopHandler" target="com.geekarchitect.patterns.cor.demo03.AbstractVerificationHandler" relationship="GENERALIZATION">
+      <point x="127.0" y="-5.0" />
+      <point x="1135.0" y="675.0" />
+      <point x="15.0" y="49.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.VerificationServiceImplV2" target="com.geekarchitect.patterns.cor.demo03.HasBoughtHandler" relationship="DEPENDENCY">
+      <point x="10.0" y="38.5" />
+      <point x="190.0" y="620.0" />
+      <point x="-117.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.HasFollowedShopHandler" target="com.geekarchitect.patterns.cor.demo03.Request" relationship="DEPENDENCY">
+      <point x="-0.0" y="-27.5" />
+      <point x="800.0" y="430.0" />
+      <point x="107.0" y="10.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.AbstractVerificationHandler" target="com.geekarchitect.patterns.cor.demo03.Response" relationship="DEPENDENCY">
+      <point x="148.5" y="0.0" />
+      <point x="1435.0" y="200.0" />
+      <point x="-5.0" y="-82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.HasFollowedShopHandler" target="com.geekarchitect.patterns.cor.demo03.Response" relationship="CREATE">
+      <point x="127.0" y="5.0" />
+      <point x="-106.5" y="5.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.AbstractVerificationHandler" target="com.geekarchitect.patterns.cor.demo03.IVerificationHandler" relationship="TO_ONE">
+      <point x="-148.5" y="0.0" />
+      <point x="148.5" y="0.0" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo03.AbstractVerificationHandler" target="com.geekarchitect.patterns.cor.demo03.IVerificationHandler" relationship="REALIZATION">
+      <point x="-15.0" y="49.5" />
+      <point x="1105.0" y="251.5" />
+      <point x="545.75" y="251.5" />
+      <point x="25.75" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Compact" zoom="1.0" showDependencies="true" x="860.0" y="488.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

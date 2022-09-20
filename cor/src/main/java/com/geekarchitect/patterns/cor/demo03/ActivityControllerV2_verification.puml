@@ -1,0 +1,34 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 用户资格校验-责任链模式版
+autonumber
+participant 用户
+用户 -> ActivityControllerV2 : verification
+activate ActivityControllerV2
+ActivityControllerV2 -> IVerificationServiceV2 : isLegalMember
+activate IVerificationServiceV2
+IVerificationServiceV2 -> VerificationServiceImplV2 : isLegalMember
+activate VerificationServiceImplV2
+VerificationServiceImplV2 -> IVerificationHandler : handleRequest
+activate IVerificationHandler
+IVerificationHandler -> AbstractVerificationHandler : handleRequest
+activate AbstractVerificationHandler
+AbstractVerificationHandler -> AbstractVerificationHandler : doHandle
+activate AbstractVerificationHandler
+AbstractVerificationHandler --> AbstractVerificationHandler
+deactivate AbstractVerificationHandler
+AbstractVerificationHandler -> IVerificationHandler : handleRequest
+activate IVerificationHandler
+IVerificationHandler --> AbstractVerificationHandler
+deactivate IVerificationHandler
+AbstractVerificationHandler --> IVerificationHandler
+deactivate AbstractVerificationHandler
+IVerificationHandler --> VerificationServiceImplV2
+deactivate IVerificationHandler
+VerificationServiceImplV2 --> IVerificationServiceV2
+deactivate VerificationServiceImplV2
+IVerificationServiceV2 --> ActivityControllerV2
+deactivate IVerificationServiceV2
+return
+@enduml

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.cor.demo04.HasFollowedShopCommand</OriginalElement>
+  <nodes>
+    <node x="341.375" y="105.0">com.geekarchitect.patterns.cor.demo04.ActivityContext</node>
+    <node x="291.875" y="364.0">com.geekarchitect.patterns.cor.demo04.VerificationServiceImplV3</node>
+    <node x="8.375" y="182.0">com.geekarchitect.patterns.cor.demo04.IVerificationServiceV3</node>
+    <node x="332.875" y="0.0">com.geekarchitect.patterns.cor.demo04.IsPlusCommand</node>
+    <node x="0.0" y="364.0">com.geekarchitect.patterns.cor.demo04.ActivityControllerV3</node>
+    <node x="562.875" y="0.0">com.geekarchitect.patterns.cor.demo04.HasFollowedShopCommand</node>
+    <node x="854.875" y="0.0">com.geekarchitect.patterns.cor.demo04.HasBoughtCommand</node>
+    <node x="575.375" y="182.0">com.geekarchitect.patterns.cor.demo04.ActivityCommandChainA</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.cor.demo04.VerificationServiceImplV3" target="com.geekarchitect.patterns.cor.demo04.ActivityCommandChainA" relationship="TO_ONE">
+      <point x="104.33333333333337" y="-27.5" />
+      <point x="552.7083333333334" y="339.0" />
+      <point x="698.875" y="339.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo04.VerificationServiceImplV3" target="com.geekarchitect.patterns.cor.demo04.ActivityContext" relationship="CREATE">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="104.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo04.ActivityCommandChainA" target="com.geekarchitect.patterns.cor.demo04.HasBoughtCommand" relationship="TO_ONE">
+      <point x="82.33333333333337" y="-27.5" />
+      <point x="781.2083333333334" y="80.0" />
+      <point x="963.875" y="80.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo04.VerificationServiceImplV3" target="com.geekarchitect.patterns.cor.demo04.IVerificationServiceV3" relationship="REALIZATION">
+      <point x="-104.33333333333331" y="-27.5" />
+      <point x="344.0416666666667" y="339.0" />
+      <point x="243.125" y="339.0" />
+      <point x="78.25" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo04.ActivityCommandChainA" target="com.geekarchitect.patterns.cor.demo04.IsPlusCommand" relationship="TO_ONE">
+      <point x="-82.33333333333331" y="-27.5" />
+      <point x="616.5416666666667" y="80.0" />
+      <point x="437.875" y="80.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo04.ActivityCommandChainA" target="com.geekarchitect.patterns.cor.demo04.HasFollowedShopCommand" relationship="TO_ONE">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo04.ActivityControllerV3" target="com.geekarchitect.patterns.cor.demo04.IVerificationServiceV3" relationship="TO_ONE">
+      <point x="0.0" y="-27.5" />
+      <point x="119.5" y="339.0" />
+      <point x="86.625" y="339.0" />
+      <point x="-78.25" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="536.5" y="209.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

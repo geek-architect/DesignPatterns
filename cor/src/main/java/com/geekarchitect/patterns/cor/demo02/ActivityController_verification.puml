@@ -1,0 +1,42 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 用户资格校验-无设计模式版
+autonumber
+participant 用户
+用户 -> ActivityController : verification
+activate ActivityController
+ActivityController -> IVerificationService : isLegalMember
+activate IVerificationService
+IVerificationService -> VerificationServiceImpl : isLegalMember
+activate VerificationServiceImpl
+VerificationServiceImpl -> IVerification : isPlus
+activate IVerification
+IVerification -> VerificationImpl : isPlus
+activate VerificationImpl
+VerificationImpl --> IVerification
+deactivate VerificationImpl
+IVerification --> VerificationServiceImpl
+deactivate IVerification
+VerificationServiceImpl -> IVerification : hasFollowedShop
+activate IVerification
+IVerification -> VerificationImpl : hasFollowedShop
+activate VerificationImpl
+VerificationImpl --> IVerification
+deactivate VerificationImpl
+IVerification --> VerificationServiceImpl
+deactivate IVerification
+VerificationServiceImpl -> IVerification : HasBought
+activate IVerification
+IVerification -> VerificationImpl : HasBought
+activate VerificationImpl
+VerificationImpl --> IVerification
+deactivate VerificationImpl
+IVerification --> VerificationServiceImpl
+deactivate IVerification
+VerificationServiceImpl --> IVerificationService
+deactivate VerificationServiceImpl
+IVerificationService --> ActivityController
+deactivate IVerificationService
+return
+@enduml

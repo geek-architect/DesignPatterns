@@ -24,12 +24,13 @@ public class IsPlusCommand implements Command {
     public boolean execute(Context context) throws Exception {
         LOG.info("IsPlusCommand");
         boolean isPlus = new Random().nextBoolean();
-        boolean isStop = !isPlus;
-        if (isStop) {
+        boolean result = CONTINUE_PROCESSING;
+        if (!isPlus) {
+            result=PROCESSING_COMPLETE;
             LOG.info("非plus会员，校验终止 isPlus={}", isPlus);
         } else {
             LOG.info("plus会员，继续校验 isPlus={}", isPlus);
         }
-        return isStop;
+        return result;
     }
 }

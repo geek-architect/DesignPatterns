@@ -23,12 +23,13 @@ public class HasBoughtCommand implements Command {
     public boolean execute(Context context) throws Exception {
         LOG.info("HasBoughtCommand");
         boolean hasBought = new Random().nextBoolean();
-        boolean isStop = hasBought;
-        if (isStop) {
+        boolean result = CONTINUE_PROCESSING;
+        if (hasBought) {
+            result=PROCESSING_COMPLETE;
             LOG.info("已购买该店铺商品，校验终止 hasBought={}", hasBought);
         } else {
             LOG.info("未购买该店铺商品，继续校验 hasBought={}", hasBought);
         }
-        return isStop;
+        return result;
     }
 }

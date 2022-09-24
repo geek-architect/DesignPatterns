@@ -23,12 +23,13 @@ public class HasFollowedShopCommand implements Command {
     public boolean execute(Context context) throws Exception {
         LOG.info("HasFollowedShopCommand");
         boolean hasFollowedShop = new Random().nextBoolean();
-        boolean isStop = hasFollowedShop;
-        if (isStop) {
+        boolean result = CONTINUE_PROCESSING;
+        if (hasFollowedShop) {
+            result=PROCESSING_COMPLETE;
             LOG.info("已关注该店铺，校验终止 hasFollowedShop={}", hasFollowedShop);
         } else {
             LOG.info("未关注该店铺，继续校验 hasFollowedShop={}", hasFollowedShop);
         }
-        return isStop;
+        return result;
     }
 }

@@ -15,6 +15,7 @@ import org.apache.commons.chain.impl.ContextBase;
  */
 @Data
 public class ActivityContext extends ContextBase {
+    public static String MEMBER_KEY="member";
     private Member member;
     private Activity activity;
     //处理结果

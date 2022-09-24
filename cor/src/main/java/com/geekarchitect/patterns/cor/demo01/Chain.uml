@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.cor.demo01.Chain</OriginalElement>
+  <nodes>
+    <node x="-138.0" y="88.0">com.geekarchitect.patterns.cor.demo01.Response</node>
+    <node x="-603.0" y="0.0">com.geekarchitect.patterns.cor.demo01.Chain</node>
+    <node x="-138.0" y="0.0">com.geekarchitect.patterns.cor.demo01.Request</node>
+    <node x="318.0" y="320.0">com.geekarchitect.patterns.cor.demo01.ConcreteHandlerB</node>
+    <node x="157.0" y="127.0">com.geekarchitect.patterns.cor.demo01.AbstractHandler</node>
+    <node x="-318.0" y="0.0">com.geekarchitect.patterns.cor.demo01.Sender</node>
+    <node x="0.0" y="320.0">com.geekarchitect.patterns.cor.demo01.ConcreteHandlerA</node>
+    <node x="157.0" y="0.0">com.geekarchitect.patterns.cor.demo01.IHandler</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.cor.demo01.AbstractHandler" target="com.geekarchitect.patterns.cor.demo01.IHandler" relationship="REALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo01.ConcreteHandlerA" target="com.geekarchitect.patterns.cor.demo01.AbstractHandler" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="149.0" y="295.0" />
+      <point x="308.0" y="295.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.cor.demo01.ConcreteHandlerB" target="com.geekarchitect.patterns.cor.demo01.AbstractHandler" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="467.0" y="295.0" />
+      <point x="308.0" y="295.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="206.0" y="281.5" />
+  <SelectedNodes>
+    <node>com.geekarchitect.patterns.cor.demo01.Response</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

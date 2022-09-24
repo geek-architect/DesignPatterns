@@ -1,0 +1,34 @@
+@startuml
+header 极客架构师
+footer 专注架构师成长
+title 责任链模式序列图
+autonumber
+participant 用户
+用户 -> Sender : service
+activate Sender
+Sender -> IHandler : handleRequest
+activate IHandler
+IHandler -> AbstractHandler : handleRequest
+activate AbstractHandler
+AbstractHandler -> AbstractHandler : canHandle
+activate AbstractHandler
+AbstractHandler --> AbstractHandler
+deactivate AbstractHandler
+AbstractHandler -> AbstractHandler : doHandle
+activate AbstractHandler
+AbstractHandler --> AbstractHandler
+deactivate AbstractHandler
+AbstractHandler -> AbstractHandler : isContinue
+activate AbstractHandler
+AbstractHandler --> AbstractHandler
+deactivate AbstractHandler
+AbstractHandler -> IHandler : handleRequest
+activate IHandler
+IHandler --> AbstractHandler
+deactivate IHandler
+AbstractHandler --> IHandler
+deactivate AbstractHandler
+IHandler --> Sender
+deactivate IHandler
+return
+@enduml

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.visitor.demo02.CloudDirV2</OriginalElement>
+  <nodes>
+    <node x="644.0" y="215.0">com.geekarchitect.patterns.visitor.demo02.CloudDirV2</node>
+    <node x="0.0" y="645.0">com.geekarchitect.patterns.visitor.demo02.ICloudFileVisitorV2</node>
+    <node x="0.0" y="794.0">com.geekarchitect.patterns.visitor.demo02.CountCloudFileVisitorV2</node>
+    <node x="322.0" y="248.0">com.geekarchitect.patterns.visitor.demo02.CloudImgV2</node>
+    <node x="0.0" y="248.0">com.geekarchitect.patterns.visitor.demo02.CloudTxtV2</node>
+    <node x="322.0" y="0.0">com.geekarchitect.patterns.visitor.demo02.ICloudFileV2</node>
+    <node x="288.0" y="645.0">com.geekarchitect.patterns.visitor.demo02.CloudFileServiceV2</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.visitor.demo02.CloudTxtV2" target="com.geekarchitect.patterns.visitor.demo02.ICloudFileV2" relationship="REALIZATION">
+      <point x="0.0" y="-159.5" />
+      <point x="151.0" y="190.0" />
+      <point x="473.0" y="190.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo02.CloudImgV2" target="com.geekarchitect.patterns.visitor.demo02.ICloudFileV2" relationship="REALIZATION">
+      <point x="0.0" y="-159.5" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo02.CloudDirV2" target="com.geekarchitect.patterns.visitor.demo02.ICloudFileV2" relationship="REALIZATION">
+      <point x="0.0" y="-192.5" />
+      <point x="795.0" y="190.0" />
+      <point x="473.0" y="190.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo02.CountCloudFileVisitorV2" target="com.geekarchitect.patterns.visitor.demo02.ICloudFileVisitorV2" relationship="REALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="49.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="473.0" y="446.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

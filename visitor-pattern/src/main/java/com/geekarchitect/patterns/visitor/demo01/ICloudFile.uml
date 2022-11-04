@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.visitor.demo01.ICloudFile</OriginalElement>
+  <nodes>
+    <node x="540.0" y="601.0">com.geekarchitect.patterns.visitor.demo01.CloudFileService</node>
+    <node x="0.0" y="193.0">com.geekarchitect.patterns.visitor.demo01.ICloudDir</node>
+    <node x="563.0" y="226.0">com.geekarchitect.patterns.visitor.demo01.ICloudTxt</node>
+    <node x="0.0" y="601.0">com.geekarchitect.patterns.visitor.demo01.FileInfo</node>
+    <node x="287.0" y="226.0">com.geekarchitect.patterns.visitor.demo01.ICloudImg</node>
+    <node x="287.0" y="0.0">com.geekarchitect.patterns.visitor.demo01.ICloudFile</node>
+    <node x="258.0" y="601.0">com.geekarchitect.patterns.visitor.demo01.CloudFileType</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.visitor.demo01.ICloudTxt" target="com.geekarchitect.patterns.visitor.demo01.ICloudFile" relationship="REALIZATION">
+      <point x="0.0" y="-148.5" />
+      <point x="691.0" y="168.0" />
+      <point x="415.0" y="168.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo01.ICloudImg" target="com.geekarchitect.patterns.visitor.demo01.ICloudFile" relationship="REALIZATION">
+      <point x="0.0" y="-148.5" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo01.ICloudDir" target="com.geekarchitect.patterns.visitor.demo01.ICloudFile" relationship="REALIZATION">
+      <point x="0.0" y="-181.5" />
+      <point x="133.5" y="168.0" />
+      <point x="415.0" y="168.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="409.5" y="394.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

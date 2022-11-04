@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.visitor.demo03.AbstractCloudFileVisitorV3</OriginalElement>
+  <nodes>
+    <node x="-364.6318181818182" y="283.9272727272727">com.geekarchitect.patterns.visitor.demo03.CountCloudFileVisitorV3</node>
+    <node x="-477.61363636363626" y="490.0818181818182">com.geekarchitect.patterns.visitor.demo03.CloudFileServiceV3</node>
+    <node x="-374.6318181818182" y="112.92727272727268">com.geekarchitect.patterns.visitor.demo03.AbstractCloudFileVisitorV3</node>
+    <node x="-357.1318181818182" y="7.92727272727268">com.geekarchitect.patterns.visitor.demo03.ICloudFileVisitorV3</node>
+    <node x="276.0" y="0.0">com.geekarchitect.patterns.visitor.demo01.ICloudFile</node>
+    <node x="552.0" y="193.0">com.geekarchitect.patterns.visitor.demo01.CloudDir</node>
+    <node x="276.0" y="226.0">com.geekarchitect.patterns.visitor.demo01.CloudImg</node>
+    <node x="0.0" y="226.0">com.geekarchitect.patterns.visitor.demo01.CloudTxt</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.visitor.demo03.AbstractCloudFileVisitorV3" target="com.geekarchitect.patterns.visitor.demo03.ICloudFileVisitorV3" relationship="REALIZATION">
+      <point x="0.0" y="-60.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo01.CloudDir" target="com.geekarchitect.patterns.visitor.demo01.ICloudFile" relationship="REALIZATION">
+      <point x="0.0" y="-181.5" />
+      <point x="685.5" y="168.0" />
+      <point x="404.0" y="168.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo01.CloudTxt" target="com.geekarchitect.patterns.visitor.demo01.ICloudFile" relationship="REALIZATION">
+      <point x="0.0" y="-148.5" />
+      <point x="128.0" y="168.0" />
+      <point x="404.0" y="168.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo03.CountCloudFileVisitorV3" target="com.geekarchitect.patterns.visitor.demo03.AbstractCloudFileVisitorV3" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.visitor.demo01.CloudImg" target="com.geekarchitect.patterns.visitor.demo01.ICloudFile" relationship="REALIZATION">
+      <point x="0.0" y="-148.5" />
+      <point x="0.0" y="71.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="170.5" y="278.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

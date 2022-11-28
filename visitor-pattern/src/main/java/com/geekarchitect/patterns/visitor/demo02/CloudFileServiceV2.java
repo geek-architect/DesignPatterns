@@ -9,7 +9,8 @@ import java.util.List;
  * @createTime 2022/11/2
  */
 public class CloudFileServiceV2 {
-    public void countFile(ICloudFileV2 cloudFileV2, FileInfo fileInfo, ICloudFileVisitorV2 cloudFileVisitor) {
+    public void countFile(ICloudFileV2 cloudFileV2, FileInfo fileInfo,
+                          ICloudFileVisitorV2 cloudFileVisitor) {
         if (!cloudFileV2.isDir()) {
             throw new IllegalArgumentException();
         }

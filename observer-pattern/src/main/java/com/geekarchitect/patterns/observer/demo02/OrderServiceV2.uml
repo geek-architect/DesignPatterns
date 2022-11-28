@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.observer.demo02.OrderServiceV2</OriginalElement>
+  <nodes>
+    <node x="-23.75" y="-50.0">com.geekarchitect.patterns.observer.demo01.IBusinessService</node>
+    <node x="-560.0" y="-50.0">com.geekarchitect.patterns.observer.demo02.IOrderServiceV2</node>
+    <node x="-560.0" y="121.0">com.geekarchitect.patterns.observer.demo02.OrderServiceV2</node>
+    <node x="-159.0" y="55.0">com.geekarchitect.patterns.observer.demo01.MobileBusinessService</node>
+    <node x="95.0" y="55.0">com.geekarchitect.patterns.observer.demo01.BookBusinessService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.observer.demo01.BookBusinessService" target="com.geekarchitect.patterns.observer.demo01.IBusinessService" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="205.5" y="30.0" />
+      <point x="81.75" y="30.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.observer.demo01.MobileBusinessService" target="com.geekarchitect.patterns.observer.demo01.IBusinessService" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="-42.0" y="30.0" />
+      <point x="81.75" y="30.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.observer.demo02.OrderServiceV2" target="com.geekarchitect.patterns.observer.demo02.IOrderServiceV2" relationship="REALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="60.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="237.5" y="259.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

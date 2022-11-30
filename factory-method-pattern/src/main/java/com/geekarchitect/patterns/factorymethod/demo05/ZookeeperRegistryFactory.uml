@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.dubbo.registry.zookeeper.ZookeeperRegistryFactory</OriginalElement>
+  <nodes>
+    <node x="541.75" y="160.0">org.apache.dubbo.registry.RegistryFactory</node>
+    <node x="0.0" y="436.0">org.apache.dubbo.registry.multicast.MulticastRegistryFactory</node>
+    <node x="547.75" y="0.0">org.apache.dubbo.common.extension.SPI</node>
+    <node x="773.75" y="127.0">org.apache.dubbo.rpc.model.ScopeModelAware</node>
+    <node x="600.0" y="425.0">org.apache.dubbo.registry.zookeeper.ZookeeperRegistryFactory</node>
+    <node x="629.5" y="298.0">org.apache.dubbo.registry.support.AbstractRegistryFactory</node>
+    <node x="1263.0" y="448.5">org.apache.dubbo.registry.nacos.NacosRegistryFactory</node>
+    <node x="1004.0" y="448.5">org.apache.dubbo.registry.multiple.MultipleRegistryFactory</node>
+    <node x="268.0" y="448.5">org.apache.dubbo.registry.client.ServiceDiscoveryRegistryFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.dubbo.registry.support.AbstractRegistryFactory" target="org.apache.dubbo.registry.RegistryFactory" relationship="REALIZATION">
+      <point x="-81.25" y="-38.5" />
+      <point x="710.75" y="273.0" />
+      <point x="647.75" y="273.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.apache.dubbo.registry.multicast.MulticastRegistryFactory" target="org.apache.dubbo.registry.support.AbstractRegistryFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="124.0" y="400.0" />
+      <point x="792.0" y="400.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.apache.dubbo.registry.nacos.NacosRegistryFactory" target="org.apache.dubbo.registry.support.AbstractRegistryFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="1375.5" y="400.0" />
+      <point x="792.0" y="400.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.apache.dubbo.registry.support.AbstractRegistryFactory" target="org.apache.dubbo.rpc.model.ScopeModelAware" relationship="REALIZATION">
+      <point x="81.25" y="-38.5" />
+      <point x="873.25" y="273.0" />
+      <point x="936.25" y="273.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="org.apache.dubbo.registry.zookeeper.ZookeeperRegistryFactory" target="org.apache.dubbo.registry.support.AbstractRegistryFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.apache.dubbo.registry.client.ServiceDiscoveryRegistryFactory" target="org.apache.dubbo.registry.support.AbstractRegistryFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="424.0" y="400.0" />
+      <point x="792.0" y="400.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.apache.dubbo.registry.multiple.MultipleRegistryFactory" target="org.apache.dubbo.registry.support.AbstractRegistryFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="1123.5" y="400.0" />
+      <point x="792.0" y="400.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.apache.dubbo.registry.RegistryFactory" target="org.apache.dubbo.common.extension.SPI" relationship="ANNOTATION">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9391805377720871" showDependencies="false" x="726.8125426039536" y="273.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

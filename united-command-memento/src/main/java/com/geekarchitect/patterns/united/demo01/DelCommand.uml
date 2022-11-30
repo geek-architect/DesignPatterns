@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekarchitect.patterns.united.demo01.DelCommand</OriginalElement>
+  <nodes>
+    <node x="-92.49999999999997" y="215.0">com.geekarchitect.patterns.united.demo01.AbstractRedisCommand</node>
+    <node x="-92.50000000000003" y="0.0">com.geekarchitect.patterns.united.demo01.IRedisCommand</node>
+    <node x="311.99999999999994" y="0.0">com.geekarchitect.patterns.united.demo01.RedisServer</node>
+    <node x="-316.0" y="111.0">com.geekarchitect.patterns.united.demo01.IMemento</node>
+    <node x="79.0" y="452.0">com.geekarchitect.patterns.united.demo01.SetCommand</node>
+    <node x="-316.0" y="0.0">com.geekarchitect.patterns.united.demo01.RedisClient</node>
+    <node x="-99.0" y="452.0">com.geekarchitect.patterns.united.demo01.DelCommand</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekarchitect.patterns.united.demo01.DelCommand" target="com.geekarchitect.patterns.united.demo01.AbstractRedisCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="-20.0" y="427.0" />
+      <point x="69.00000000000003" y="427.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.united.demo01.SetCommand" target="com.geekarchitect.patterns.united.demo01.AbstractRedisCommand" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="158.0" y="427.0" />
+      <point x="69.00000000000003" y="427.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="com.geekarchitect.patterns.united.demo01.AbstractRedisCommand" target="com.geekarchitect.patterns.united.demo01.IRedisCommand" relationship="REALIZATION">
+      <point x="-5.6843418860808015E-14" y="-93.5" />
+      <point x="0.0" y="82.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="133.0" y="253.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

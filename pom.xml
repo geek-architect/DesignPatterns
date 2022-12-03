@@ -21,6 +21,7 @@
         <module>builder-pattern</module>
         <module>prototype-pattern</module>
         <module>command-pattern</module>
+        <module>mediator-pattern</module>
     </modules>
 
     <properties>

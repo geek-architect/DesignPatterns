@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class CompoundShape implements IShape {
     //collection of Shapes
-    private List<IShape> shapes = new ArrayList<IShape>();
+    private final List<IShape> shapes = new ArrayList<IShape>();
 
     @Override
     public void draw(String color) {

@@ -7,11 +7,15 @@ import org.slf4j.LoggerFactory;
  * @author 极客架构师@吴念
  * @createTime 2023/2/10
  */
-public class Line implements IShape {
+public class Line extends AbstractShape {
     private static final Logger LOG = LoggerFactory.getLogger(Line.class);
 
+    public Line(String name) {
+        super(name);
+    }
+
     @Override
-    public void draw(String color) {
-        LOG.info("用{}颜色画直线", color);
+    public void doDraw(String color) {
+        LOG.info("用{}颜色画{}", color, name);
     }
 }

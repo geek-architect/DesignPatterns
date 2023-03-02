@@ -5,5 +5,5 @@ package com.geekarchitect.patterns.composite.demo04;
  * @createTime 2023/2/10
  */
 public interface IShape {
-    void draw(String color);
+    void doDraw(String color);
 }

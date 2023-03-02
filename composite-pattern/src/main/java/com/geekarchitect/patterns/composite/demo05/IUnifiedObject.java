@@ -6,8 +6,4 @@ package com.geekarchitect.patterns.composite.demo05;
  */
 public interface IUnifiedObject {
     void doService();
-
-    String getName();
-
-    void setName(String name);
 }

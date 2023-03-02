@@ -11,11 +11,12 @@ public class IndividualObject extends AbstractUnifiedObject {
     private static final Logger LOG = LoggerFactory.getLogger(IndividualObject.class);
 
     public IndividualObject(String name) {
-        this.setName(name);
+        super(name);
     }
+
 
     @Override
     public void doService() {
-        LOG.info("单体对象：{} 业务方法", getName());
+        LOG.info("单体对象：{} 业务方法", name);
     }
 }

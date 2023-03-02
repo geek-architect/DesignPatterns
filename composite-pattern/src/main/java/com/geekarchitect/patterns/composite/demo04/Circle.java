@@ -7,11 +7,15 @@ import org.slf4j.LoggerFactory;
  * @author 极客架构师@吴念
  * @createTime 2023/2/10
  */
-public class Circle implements IShape {
+public class Circle extends AbstractShape {
     private static final Logger LOG = LoggerFactory.getLogger(Circle.class);
 
+    public Circle(String name) {
+        super(name);
+    }
+
     @Override
-    public void draw(String color) {
-        LOG.info("用{}颜色画圆", color);
+    public void doDraw(String color) {
+        LOG.info("用{}颜色画{}", color, name);
     }
 }

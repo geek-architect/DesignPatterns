@@ -15,12 +15,13 @@ public class CompositeObject extends AbstractUnifiedObject {
     private final List<IUnifiedObject> children = new ArrayList<>();
 
     public CompositeObject(String name) {
-        this.setName(name);
+        super(name);
     }
+
 
     @Override
     public void doService() {
-        LOG.info("组合对象：{} 业务方法", getName());
+        LOG.info("组合对象：{} 业务方法", name);
         children.forEach(IUnifiedObject::doService);
     }
 

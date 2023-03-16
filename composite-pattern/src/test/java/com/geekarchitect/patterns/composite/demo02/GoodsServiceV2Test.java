@@ -30,10 +30,10 @@ class GoodsServiceV2Test {
     }
 
     private ICategory generateCategory() {
-        ICategory mobileCategory = new GoodsBranchCategoryV2(1, "手机");
-        ICategory mobile5gCategory = new GoodsBranchCategoryV2(11, "5G手机");
-        ICategory gameCategory = new GoodsBranchCategoryV2(12, "游戏手机");
-        ICategory huaWeiMobileCategory = new GoodsLeafCategoryV2(111, "华为手机");
+        GoodsBranchCategoryV2 mobileCategory = new GoodsBranchCategoryV2(1, "手机");
+        GoodsBranchCategoryV2 mobile5gCategory = new GoodsBranchCategoryV2(11, "5G手机");
+        GoodsBranchCategoryV2 gameCategory = new GoodsBranchCategoryV2(12, "游戏手机");
+        GoodsLeafCategoryV2 huaWeiMobileCategory = new GoodsLeafCategoryV2(111, "华为手机");
 
         mobileCategory.add(mobile5gCategory);
         mobileCategory.add(gameCategory);

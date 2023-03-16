@@ -27,16 +27,6 @@ public class GoodsLeafCategoryV2 implements ILeafCategoryV2 {
     }
 
     @Override
-    public void add(ICategory category) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public List getSubCategories() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public String getDetails() {
         return "叶子分类：id=" + this.id + " name=" + this.name + "\n";
     }

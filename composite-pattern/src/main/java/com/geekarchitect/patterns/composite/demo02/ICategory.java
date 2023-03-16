@@ -11,9 +11,6 @@ public interface ICategory {
 
     String getName();
 
-    void add(ICategory category);
-
-    List getSubCategories();
 
     String getDetails();
 }

@@ -9,16 +9,16 @@ import org.slf4j.LoggerFactory;
  * @author 极客架构师@吴念
  * @createTime 2023/3/28
  */
-public class ConcreteFirstDimensionObject extends AbstractFirstDimensionObject {
+public class ConcreteMultiDimensionalB extends AbstractMultiDimensional {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ConcreteFirstDimensionObject.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ConcreteMultiDimensionalB.class);
 
-    public ConcreteFirstDimensionObject(IOtherDimensionObject otherDimensionObject) {
+    public ConcreteMultiDimensionalB(ISingleDimensionalA otherDimensionObject) {
         super(otherDimensionObject);
     }
 
     public void refinedService() {
         //扩展代码
-        otherDimensionObject.doService();
+        LOG.info("ConcreteMultiDimensionalB refinedService()");
     }
 }

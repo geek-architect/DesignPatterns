@@ -13,14 +13,16 @@ public class FileExportService {
     private static final Logger LOG = LoggerFactory.getLogger(FileExportService.class);
 
     public void exportFile(List<SKU> skuList) {
-        LOG.info("文件导出服务");
-        IExcelExport excelExport=new Excel2003Export();
-        IFileExport fileExport=new ChinaFileExport(excelExport);
-        fileExport.exportExcel(skuList);
-
+        LOG.info("导出中文Mysql文件");
         ISqlExport sqlExport=new MysqlExport();
-        fileExport.setSqlExport(sqlExport);
+        IFileExport fileExport=new ChinaFileExport(sqlExport);
         fileExport.exportSql(skuList);
+
+        LOG.info("导出俄罗斯Excel2003文件");
+        IExcelExport excelExport=new Excel2003Export();
+        fileExport=new RussiaFileExport();
+        fileExport.setExcelExport(excelExport);
+        fileExport.exportExcel(skuList);
     }
 
 }

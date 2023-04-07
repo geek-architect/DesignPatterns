@@ -15,6 +15,6 @@ public class Excel2003Export implements IExcelExport {
     private static final Logger LOG = LoggerFactory.getLogger(Excel2003Export.class);
 
     public void exportExcel(List<SKU> skuList) {
-        LOG.info("导出中国-excel2003文件");
+        LOG.info("导出excel2003文件");
     }
 }

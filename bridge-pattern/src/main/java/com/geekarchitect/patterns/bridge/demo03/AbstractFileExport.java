@@ -3,13 +3,19 @@ package com.geekarchitect.patterns.bridge.demo03;
 import java.util.List;
 
 /**
- * 抽象工厂：抽象类
+ * 多维度对象角色：抽象类
  *
  * @author 极客架构师@吴念
  * @createTime 2022/6/21
  */
 public abstract class AbstractFileExport implements IFileExport {
+    /**
+     * 桥角色
+     */
     protected IExcelExport excelExport;
+    /**
+     * 桥角色
+     */
     protected ISqlExport sqlExport;
 
     public AbstractFileExport(IExcelExport excelExport) {

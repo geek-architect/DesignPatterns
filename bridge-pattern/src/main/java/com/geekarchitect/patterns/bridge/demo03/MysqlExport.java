@@ -15,6 +15,6 @@ public class MysqlExport implements ISqlExport {
     private static final Logger LOG = LoggerFactory.getLogger(MysqlExport.class);
 
     public void exportSql(List<SKU> skuList) {
-        LOG.info("导出中国-mysql文件");
+        LOG.info("导出mysql文件");
     }
 }

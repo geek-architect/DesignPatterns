@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
  * @author 极客架构师@吴念
  * @createTime 2023/3/28
  */
-public class ConcreteOtherDimensionObjectA implements IOtherDimensionObject {
+public class ConcreteSingleDimensionalA implements ISingleDimensionalA {
     private static final Logger LOG = LoggerFactory.getLogger(ConcreteImplementorA.class);
 
     @Override

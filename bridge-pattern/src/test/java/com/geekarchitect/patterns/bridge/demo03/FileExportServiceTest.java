@@ -26,7 +26,7 @@ class FileExportServiceTest extends AbstractTest {
 
     @Test
     void exportFile() {
-        LOG.info("基于桥接模式的文件导出模式");
+        LOG.info("基于桥接模式的文件导出模块");
         List<SKU> skuList=generateSku(6);
         fileExportService.exportFile(skuList);
     }

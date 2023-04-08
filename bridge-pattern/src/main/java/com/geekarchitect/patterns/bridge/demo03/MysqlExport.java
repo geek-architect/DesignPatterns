@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /**
- * 具体产品
+ * 单维度角色：具体类
  *
  * @author 极客架构师@吴念
  * @createTime 2022/6/13

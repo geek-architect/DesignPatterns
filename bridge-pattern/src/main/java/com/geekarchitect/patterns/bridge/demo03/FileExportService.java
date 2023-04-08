@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /**
+ * 客户方角色
  * @author 极客架构师@吴念
  * @createTime 2022/6/13
  */

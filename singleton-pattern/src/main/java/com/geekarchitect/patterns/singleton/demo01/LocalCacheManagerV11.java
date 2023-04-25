@@ -20,6 +20,7 @@ public class LocalCacheManagerV11 implements ILocalCache {
         initCache();
     }
 
+    //21-非线程安全——常见方案
    /* public static LocalCacheManagerV11 getInstance() {
         if (null == localCacheManagerV11) {
             LOG.info("延迟实例化：第一版代码（非线程安全）");
@@ -28,7 +29,7 @@ public class LocalCacheManagerV11 implements ILocalCache {
         return localCacheManagerV11;
     }*/
 
-
+    //22-线程安全——低效方案
     /*public static synchronized LocalCacheManagerV11 getInstance() {
         if (null == localCacheManagerV11) {
             LOG.info("延迟实例化：第一版代码优化（线程安全，低效）");
@@ -37,7 +38,7 @@ public class LocalCacheManagerV11 implements ILocalCache {
         return localCacheManagerV11;
     }*/
 
-
+    //23-线程安全，双重检测，高效，推荐方案
     public static LocalCacheManagerV11 getInstance() {
         if (null == localCacheManagerV11) {
             synchronized (LocalCacheManagerV11.class) {
